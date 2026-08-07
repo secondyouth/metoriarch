@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>株式会社Metoriarch｜会社を運営する会社。</title>
+<meta name="description" content="急成長する会社の、営業以外の業務を一括で引き受けます。経理・給与計算・請求・人事・総務・法務の事務・営業事務・人材育成・マネジメント。入口は無料査定です。">
+<meta name="theme-color" content="#23264a">
+<script>
+/* フェードインを使える環境でだけ .js を付ける（付かなければ全文が最初から見える） */
+(function(){
+  try{
+    if(!('IntersectionObserver' in window)) return;
+    if(!document.documentElement.classList) return;
+    if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    document.documentElement.classList.add('js');
+  }catch(e){}
+})();
+</script>
+<style>
+  :root{
+    --navy:#3B3F72;
+    --deep:#23264a;
+    --purple:#8A8AB8;
+    --gold:#C3BC91;
+    --gold-ink:#a3995f;
+    --ink:#2a2a3d;
+    --act2bg:#F7F5EE;
+    --act3bg:#FCFBF7;
+    --act4bg:#0E0E14;
+    --dawn:#FDFCF7;
+    --gold-pale:#F4F1E4;
+    --gold-mid:#EAE5C9;
+    --warm-line:rgba(195,188,145,.55);
+    --wrap:1080px;
+    --cards:880px;
+    --mincho:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
+    --gothic:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic",sans-serif;
+    --serif-en:Georgia,"Times New Roman",serif;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ -webkit-text-size-adjust:100%; }
+  body{
+    background:var(--act4bg); color:var(--ink);
+    font-family:var(--gothic);
+    font-size:16px; line-height:2.05; letter-spacing:.04em;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    overflow-x:hidden;
+    line-break:strict; word-break:normal; overflow-wrap:break-word;
+  }
+  img{ max-width:100%; }
+
+  .wrap{ max-width:var(--wrap); margin:0 auto; padding:0 30px; }
+  .cards{ max-width:var(--cards); margin:0 auto; padding:0 24px; }
+
+  /* 微細なノイズ（全幕共通） */
+  .noise{
+    position:absolute; inset:0; pointer-events:none; opacity:.05; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.7'/%3E%3C/svg%3E");
+  }
+  .facet{ position:absolute; inset:0; pointer-events:none; }
+
+  /* =========================================================
+     第1幕：折り紙の面（金の面 × 紺・深紺の面／折り線はパキッと）
+     ========================================================= */
+  /* 夜＝社長の独白の器。折り紙の面は残すが、暗く控えめに畳む */
+  .act1{
+    position:relative; overflow:hidden;
+    background:#0C0E1D; color:#fff;
+    padding-bottom:212px;
+  }
+  /* 十二単（夜の襲）：半透明の面を12枚重ね、暗色のまま透けるグラデーションを作る */
+  .act1{ background:linear-gradient(155deg, #1C1F38 0%, #13152B 46%, #0C0E1D 100%); }
+  .act1 .k1{ background:linear-gradient(215deg, rgba(195,188,145,.24) 0%, rgba(195,188,145,.06) 100%); clip-path:polygon(100% 0, 90% 0, 100% 3%); }
+  .act1 .k2{ background:linear-gradient(215deg, rgba(190,180,152,.18) 0%, rgba(190,180,152,.04) 100%); clip-path:polygon(100% 0, 81% 0, 100% 6%); }
+  .act1 .k3{ background:linear-gradient(215deg, rgba(186,172,160,.15) 0%, rgba(186,172,160,.03) 100%); clip-path:polygon(100% 0, 71% 0, 100% 9%); }
+  .act1 .k4{ background:linear-gradient(215deg, rgba(178,165,165,.13) 0%, rgba(178,165,165,.03) 100%); clip-path:polygon(100% 0, 60% 0, 100% 13%); }
+  .act1 .k5{ background:linear-gradient(215deg, rgba(170,158,170,.12) 0%, rgba(170,158,170,.02) 100%); clip-path:polygon(100% 0, 48% 0, 100% 17%); }
+  .act1 .k6{ background:linear-gradient(215deg, rgba(160,152,177,.11) 0%, rgba(160,152,177,.02) 100%); clip-path:polygon(100% 0, 35% 0, 100% 22%); }
+  .act1 .k7{ background:linear-gradient(215deg, rgba(150,146,184,.10) 0%, rgba(150,146,184,.02) 100%); clip-path:polygon(100% 0, 21% 0, 100% 27%); }
+  .act1 .k8{ background:linear-gradient(215deg, rgba(138,137,183,.10) 0%, rgba(138,137,183,.02) 100%); clip-path:polygon(100% 0, 6% 0, 100% 33%); }
+  .act1 .k9{ background:linear-gradient(215deg, rgba(126,128,182,.09) 0%, rgba(126,128,182,.02) 100%); clip-path:polygon(100% 0, 0 0, 0 2%, 100% 39%); }
+  .act1 .k10{ background:linear-gradient(215deg, rgba(113,116,175,.09) 0%, rgba(113,116,175,.02) 100%); clip-path:polygon(100% 0, 0 0, 0 8%, 100% 46%); }
+  .act1 .k11{ background:linear-gradient(215deg, rgba(100,104,168,.08) 0%, rgba(100,104,168,.01) 100%); clip-path:polygon(100% 0, 0 0, 0 15%, 100% 53%); }
+  .act1 .k12{ background:linear-gradient(215deg, rgba(89,93,158,.08) 0%, rgba(89,93,158,.01) 100%); clip-path:polygon(100% 0, 0 0, 0 23%, 100% 61%); }
+  .act1 .k13{ background:linear-gradient(215deg, rgba(78,82,148,.08) 0%, rgba(78,82,148,.01) 100%); clip-path:polygon(100% 0, 0 0, 0 31%, 100% 69%); }
+  .act1 .k14{ background:linear-gradient(215deg, rgba(69,73,136,.07) 0%, rgba(69,73,136,.01) 100%); clip-path:polygon(100% 0, 0 0, 0 40%, 100% 78%); }
+  .act1 .k15{ background:linear-gradient(215deg, rgba(60,64,124,.07) 0%, rgba(60,64,124,.01) 100%); clip-path:polygon(100% 0, 0 0, 0 49%, 100% 87%); }
+  .act1 .k16{ background:linear-gradient(215deg, rgba(52,56,112,.07) 0%, rgba(52,56,112,.01) 100%); clip-path:polygon(100% 0, 0 0, 0 58%, 100% 96%); }
+  .act1 .b1{ background:linear-gradient(150deg, rgba(9,11,26,.40) 0%, rgba(9,11,26,.18) 100%); clip-path:polygon(0 62%, 100% 82%, 100% 100%, 0 100%); }
+  .act1 .b2{ background:linear-gradient(150deg, rgba(7,9,22,.48) 0%, rgba(7,9,22,.24) 100%); clip-path:polygon(0 73%, 100% 88%, 100% 100%, 0 100%); }
+  .act1 .b3{ background:linear-gradient(150deg, rgba(5,6,17,.54) 0%, rgba(5,6,17,.3) 100%); clip-path:polygon(0 83%, 100% 93%, 100% 100%, 0 100%); }
+  .act1 .b4{ background:linear-gradient(150deg, rgba(3,4,12,.6) 0%, rgba(3,4,12,.4) 100%); clip-path:polygon(0 92%, 100% 97%, 100% 100%, 0 100%); }
+  /* かすみ：面の段差を溶かして、夜の中で1枚のグラデーションに錯覚させる */
+  .act1 .kasumi{
+    background:
+      radial-gradient(ellipse 110% 85% at 100% 0%, rgba(195,188,145,.12) 0%, rgba(150,146,184,.06) 30%, rgba(138,138,184,0) 60%),
+      linear-gradient(215deg, rgba(255,255,255,.03) 0%, rgba(19,21,43,0) 45%, rgba(3,4,12,.36) 100%);
+  }
+  .act1 > .wrap, .act1 > header{ position:relative; z-index:2; }
+
+  /* 第1幕の下端＝襲の段々が明るくなりながら、夜が昼に折れる */
+  .fm{ position:absolute; left:0; right:0; bottom:0; z-index:3; }
+  .fm1{ height:230px; background:rgba(253,252,247,.12); clip-path:polygon(0 52%, 100% 0, 100% 100%, 0 100%); }
+  .fm2{ height:170px; background:rgba(253,252,247,.30); clip-path:polygon(0 56%, 100% 6%, 100% 100%, 0 100%); }
+  .fm3{ height:115px; background:rgba(253,252,247,.58); clip-path:polygon(0 60%, 100% 12%, 100% 100%, 0 100%); }
+  .fm4{ height:70px; background:var(--dawn); clip-path:polygon(0 64%, 100% 16%, 100% 100%, 0 100%); }
+
+  header.site{ max-width:var(--wrap); margin:0 auto; padding:40px 30px 0; }
+  .logo{ display:flex; align-items:center; gap:18px; }
+  .logo svg, .logo img{ display:block; flex:none; }
+  .logo .word{
+    font-family:"Avenir Next","Futura","Helvetica Neue",var(--gothic);
+    font-weight:500; font-size:21px; letter-spacing:.28em; color:#fff; line-height:1;
+  }
+
+  .hero{ padding:112px 0 0; }
+  .hero .en{
+    font-family:var(--serif-en); font-style:italic;
+    font-size:13.5px; letter-spacing:.14em; color:rgba(255,255,255,.55);
+    margin-bottom:52px;
+  }
+
+  /* 独白：社長の頭のなかの声。理念調にしない（左寄せ・字間は普通）
+     間と強弱で感情の起伏をつける：s1→s2→s3で小さく静かに落ち、s4だけ声が大きくなる */
+  .monologue p{
+    font-family:var(--gothic);
+    line-height:2.15; letter-spacing:.04em; font-weight:400;
+    text-align:left; max-width:34em;
+  }
+  .monologue p:last-child{ margin-bottom:0 !important; }
+  /* 文節単位で折り返す（助詞や1文字だけが次行に落ちる汚い折り返しを防ぐ） */
+  .w{ display:inline-block; }
+  br.sp{ display:none; }
+  .monologue p.s1{ font-size:18px; color:rgba(255,255,255,.8); margin-bottom:3.5em; }
+  .monologue p.s2{ font-size:18px; color:rgba(255,255,255,.8); margin-bottom:5em; }
+  .monologue p.s3{ font-size:15px; color:rgba(255,255,255,.6); margin-bottom:6.5em; }
+  .monologue p.strong{
+    font-family:var(--mincho); font-size:clamp(21px, 5.8vw, 30px); font-weight:600; letter-spacing:.08em;
+    line-height:1.7; color:rgba(255,255,255,.95); margin-top:0;
+  }
+
+  /* 独白：ロード時に1行ずつ立ち上げる */
+  @keyframes heroUp{ from{ opacity:0; transform:translateY(18px); } to{ opacity:1; transform:none; } }
+  .js .hero-seq{ opacity:0; animation:heroUp .9s cubic-bezier(.2,.8,.2,1) forwards; }
+  .js .hero-seq.s1{ animation-delay:.15s; }
+  .js .hero-seq.s2{ animation-delay:.95s; }
+  .js .hero-seq.s3{ animation-delay:1.75s; }
+  .js .hero-seq.s4{ animation-delay:2.55s; }
+  .js .hero-seq.done{ opacity:1; animation:none; }
+
+  /* 第1幕の語り（不動産の話）＝例え話。控えめに畳む */
+  .lede{ margin-top:86px; }
+  .ana-label{
+    font-family:var(--serif-en); font-style:italic;
+    font-size:12.5px; letter-spacing:.2em; color:var(--gold);
+    margin-bottom:18px;
+  }
+  .ana-label::after{
+    content:""; display:inline-block; width:44px; height:1px;
+    background:rgba(195,188,145,.5); vertical-align:middle; margin-left:14px;
+  }
+  .lede p{
+    font-family:var(--gothic);
+    font-size:14.5px; line-height:2.05; letter-spacing:.05em; font-weight:400;
+    color:rgba(255,255,255,.60);
+    margin-bottom:24px; max-width:40em;
+  }
+  .lede p.big{
+    font-family:var(--mincho); color:rgba(255,255,255,.72);
+    font-size:clamp(17px, 4.2vw, 21px); line-height:1.9; font-weight:500; letter-spacing:.1em;
+    margin:32px 0 30px; max-width:none;
+  }
+  .lede p.turn{
+    font-size:16.5px; color:rgba(255,255,255,.88);
+  }
+  .lede p:last-child{ margin-bottom:0; }
+  .estate-fig{ margin:36px 0 40px; opacity:.66; }
+  .estate-fig svg{ width:100%; max-width:560px; height:auto; display:block; }
+
+  /* =========================================================
+     明転：夜が昼になる（宣言）
+     ここから下はすべて白〜淡い金の面
+     ========================================================= */
+  .dawn{
+    position:relative; overflow:hidden;
+    background:var(--dawn); color:var(--ink);
+    padding:232px 0 196px;
+  }
+  /* 夜の名残：スクロールで入ってきたときだけ、上端の暗さがゆっくり引く
+     （JSがなければ最初から opacity:0 ＝ 明るいまま。文字には一切かからない） */
+  .dawnveil{
+    position:absolute; left:0; right:0; top:0; bottom:0; z-index:1; pointer-events:none;
+    background:linear-gradient(180deg, rgba(30,33,66,.92) 0%, rgba(30,33,66,.42) 15%, rgba(30,33,66,0) 32%);
+    opacity:0;
+  }
+  .js .dawnveil{ opacity:1; transition:opacity 1.5s ease; }
+  .js .dawn.is-lit .dawnveil{ opacity:0; }
+  @media (prefers-reduced-motion: reduce){
+    .js .dawnveil{ opacity:0; transition:none; }
+  }
+  /* 昼パートの折り紙の面は「気配」まで薄める（夜＝第1幕の面はそのまま） */
+  .dawn .facet{ opacity:.05; }
+  .dawn .d1{ background:linear-gradient(158deg,#FFFFFF 0%,#FCFAF3 100%); clip-path:polygon(0 0, 100% 0, 100% 54%, 0 82%); }
+  .dawn .d2{ background:var(--gold-pale); clip-path:polygon(100% 0, 100% 44%, 47% 0); }
+  .dawn .d3{ background:var(--gold-mid); clip-path:polygon(100% 0, 100% 19%, 78% 0); }
+  .dawn .d4{ background:rgba(138,138,184,.09); clip-path:polygon(0 100%, 100% 70%, 100% 100%); }
+  /* 宣言：Metoriarchが名乗る一文だけの器（大きく・中央・字間広め） */
+  .dawn > .wrap{ position:relative; z-index:2; text-align:center; }
+  .dawn .rule{ width:64px; height:1px; background:var(--gold); margin:0 auto 54px; }
+  .dawn h1{
+    font-family:var(--mincho); color:var(--navy);
+    font-size:clamp(23px, 6.5vw, 46px); font-weight:600; line-height:1.95; letter-spacing:.2em;
+    text-indent:.2em;
+  }
+  /* 明転の下端：左から折れ上がる折り線で第2幕へ */
+  .foldDawn{
+    position:absolute; left:0; right:0; bottom:0; height:124px; z-index:3;
+    background:var(--act2bg);
+    clip-path:polygon(0 100%, 0 30%, 100% 100%);
+  }
+
+  /* =========================================================
+     第2幕：淡い金の面
+     ========================================================= */
+  .act2{
+    position:relative; overflow:hidden;
+    background:var(--act2bg);
+    padding:112px 0 250px;
+  }
+  .act2 .facet{ opacity:.05; }
+  .act2 .g1{ background:#FFFFFF; clip-path:polygon(0 0, 100% 0, 100% 30%, 0 58%); }
+  .act2 .g2{ background:var(--gold-pale); clip-path:polygon(0 100%, 100% 46%, 100% 100%); }
+  .act2 .g3{ background:var(--gold-mid); clip-path:polygon(100% 100%, 100% 60%, 58% 100%); }
+  .act2 > *:not(.facet):not(.noise):not(.foldDiag){ position:relative; z-index:2; }
+  .foldDiag{
+    position:absolute; left:0; right:0; bottom:0; height:130px; z-index:3;
+    background:var(--act3bg);
+    clip-path:polygon(0 100%, 100% 12%, 100% 100%);
+  }
+
+  .sec-head{ max-width:var(--cards); margin:0 auto 54px; padding:0 24px; text-align:center; }
+  .sec-head h2{
+    font-family:var(--mincho); font-size:clamp(21px, 5.8vw, 30px); font-weight:600; color:var(--navy);
+    letter-spacing:.14em; line-height:1.6; margin-bottom:10px;
+  }
+  .sec-head .en{
+    font-family:var(--serif-en); font-style:italic; font-size:13px;
+    color:var(--gold-ink); letter-spacing:.16em;
+  }
+
+  /* =========================================================
+     第3幕：白
+     ========================================================= */
+  .act3{ position:relative; background:var(--act3bg); padding:36px 0 120px; }
+
+  /* ---- カード ---- */
+  .card{
+    background:#FFFDF9; color:var(--ink);
+    border:1px solid rgba(195,188,145,.30);
+    border-radius:0; padding:82px 78px 68px; margin-bottom:120px;
+    box-shadow:0 1px 1px rgba(59,63,114,.03), 0 32px 64px -40px rgba(59,63,114,.12);
+    line-height:2.05;
+  }
+  .card:last-child{ margin-bottom:0; }
+  .card--float{
+    background:#FFFDF9; border:1px solid rgba(195,188,145,.30);
+    box-shadow:0 1px 1px rgba(59,63,114,.03), 0 32px 64px -40px rgba(59,63,114,.12);
+    padding:74px 64px 62px; margin-bottom:120px;
+  }
+  /* 短い文（見出し・リード・宣言）は中央。3行以上の本文とリストは左のまま */
+  .card h2{
+    font-family:var(--mincho);
+    font-size:clamp(19px, 4.45vw, 23px); font-weight:600; color:var(--navy); letter-spacing:.14em;
+    line-height:1.6; margin-bottom:9px; text-align:center;
+  }
+  .card .h2en{
+    font-family:var(--serif-en); font-style:italic; font-size:12.5px;
+    color:var(--gold-ink); letter-spacing:.16em; line-height:1.4;
+    padding-bottom:22px; margin-bottom:34px; text-align:center;
+    border-bottom:1px solid rgba(195,188,145,.45);
+  }
+  .card p{ margin-bottom:1.4em; }
+  .card p:last-child{ margin-bottom:0; }
+  .card p.lead-line{
+    font-family:var(--mincho); font-size:clamp(17px, 3.87vw, 20px); font-weight:600; color:var(--navy);
+    letter-spacing:.09em; line-height:1.95; text-align:center;
+  }
+  .card p.key{
+    font-family:var(--mincho); font-size:clamp(18px, 4.25vw, 22px); font-weight:600; color:var(--navy);
+    letter-spacing:.1em; line-height:1.9; text-align:center;
+    margin:30px 0 1.4em;
+  }
+  .card p.key--lead{ font-size:clamp(18px, 5.22vw, 27px); line-height:1.85; margin:0 0 1.5em; }
+  .card p.note{ font-size:14.5px; color:#6d6d7c; line-height:1.95; text-align:center; }
+  /* 1行で収まる短文は中央に寄せる */
+  .card p.ctr{ text-align:center; }
+
+  /* ---- 罫線リスト（左カラーボーダーの淡色ボックスは使わない） ---- */
+  .rule-list{ list-style:none; margin:2px 0 30px; }
+  .rule-list li{
+    display:grid; grid-template-columns:9em 1fr; row-gap:32px; column-gap:24px;
+    padding:22px 4px; border-bottom:1px solid rgba(138,138,184,.28); align-items:baseline;
+  }
+  .rule-list .who{
+    font-family:var(--mincho); font-weight:600; color:var(--navy);
+    letter-spacing:.08em; font-size:16.5px; white-space:nowrap;
+  }
+  .rule-list .desc{ display:block; }
+
+  /* ---- 罫線だけの言い切りリスト ---- */
+  .stmt-list{ list-style:none; margin:2px 0 30px; }
+  .stmt-list li{
+    padding:22px 4px; border-bottom:1px solid rgba(138,138,184,.28);
+    font-family:var(--mincho); font-size:19px; font-weight:600; color:var(--navy);
+    letter-spacing:.08em; line-height:1.9; text-align:center;
+  }
+
+  /* ---- 止まらなくなるもの（余白と文字サイズで見せる・箱にしない） ---- */
+  .gets{
+    display:grid; grid-template-columns:repeat(4,1fr);
+    margin:14px 0 44px;
+    border-top:1px solid rgba(195,188,145,.65);
+    border-bottom:1px solid rgba(195,188,145,.65);
+  }
+  .gets span{
+    display:block; text-align:center; padding:32px 6px;
+    font-family:var(--mincho); font-size:clamp(18px, 4.64vw, 24px); font-weight:600; color:var(--navy);
+    letter-spacing:.1em; line-height:1.5;
+    border-left:1px solid rgba(138,138,184,.22);
+  }
+  .gets span:first-child{ border-left:none; }
+
+  .points{ list-style:none; margin:4px 0 32px; }
+  .points li{ padding-left:1.25em; text-indent:-1.25em; margin-bottom:12px; }
+  .points li:last-child{ margin-bottom:0; }
+  .points li::before{ content:"・"; color:var(--gold); font-weight:700; }
+
+  /* ---- 御社に残るもの ／ 引き受けるもの の対比 ---- */
+  .handover{
+    display:grid; grid-template-columns:0.80fr 62px 1.34fr;
+    align-items:center; margin:36px 0 34px;
+  }
+  .ho-keep{ grid-column:1; grid-row:1; }
+  .ho-arrow{ grid-column:2; grid-row:1; }
+  .ho-take{ grid-column:3; grid-row:1; }
+  .ho-down{ grid-column:3; grid-row:2; }
+  .ho-system{ grid-column:3; grid-row:3; }
+  .ho-box{ border-radius:5px; }
+  .ho-label{
+    font-size:12.5px; font-weight:600; letter-spacing:.16em; line-height:1.7;
+    text-align:center; margin-bottom:18px;
+  }
+  /* 左：御社に残るもの（軽い） */
+  .ho-keep{
+    background:transparent; border:1px solid rgba(195,188,145,.55);
+    padding:32px 22px 26px; text-align:center;
+  }
+  .ho-keep .ho-label{ color:var(--gold-ink); }
+  .ho-keep-list{ list-style:none; }
+  .ho-keep-list li{
+    font-family:var(--mincho); font-size:clamp(17px, 4.06vw, 21px); font-weight:600; color:var(--navy);
+    letter-spacing:.12em; line-height:1.7; padding:13px 0;
+    border-bottom:1px solid rgba(195,188,145,.6);
+  }
+  .ho-keep-list li:first-child{ border-top:1px solid rgba(195,188,145,.6); }
+  .ho-sub{
+    font-size:12.5px; color:#7a7a86; letter-spacing:.08em;
+    line-height:1.8; margin-top:14px;
+  }
+  /* 矢印 */
+  .ho-arrow{ display:flex; align-items:center; justify-content:center; }
+  .ho-arrow svg{ display:block; }
+  /* 右：引き受けるもの（ぎっしり） */
+  .ho-take{
+    background:var(--navy); color:#fff;
+    padding:26px 22px 24px;
+  }
+  .ho-take .ho-label{ color:rgba(255,255,255,.78); }
+  .ho-chips{ display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+  .ho-chips span{
+    display:inline-block; padding:9px 13px; border-radius:3px;
+    background:rgba(255,255,255,.13); border:1px solid rgba(255,255,255,.30);
+    font-size:14px; font-weight:600; letter-spacing:.03em; line-height:1.5;
+    white-space:nowrap;
+  }
+  /* 2段目：引き受けたものは仕組みに変わる */
+  .ho-down{ display:flex; justify-content:center; padding:13px 0 11px; }
+  .ho-down svg{ display:block; }
+  .ho-system{
+    background:var(--gold-pale); border:1px solid rgba(195,188,145,.55);
+    border-radius:5px; padding:17px 18px 15px; text-align:center;
+  }
+  .ho-system-main{
+    font-size:16px; font-weight:600; color:var(--navy);
+    letter-spacing:.06em; line-height:1.65;
+  }
+  .ho-system-sub{
+    font-size:12.5px; color:var(--gold-ink); letter-spacing:.1em;
+    line-height:1.7; margin-top:5px;
+  }
+
+  /* ---- 精算書 ---- */
+  .stmt-wrap{ margin:32px 0 30px; }
+  table.stmt{
+    width:100%; max-width:520px; margin:0 auto; border-collapse:collapse;
+    font-variant-numeric:tabular-nums;
+  }
+  table.stmt th, table.stmt td{
+    text-align:left; padding:16px 2px; vertical-align:baseline; line-height:1.7;
+    border-bottom:1px solid rgba(138,138,184,.28);
+  }
+  table.stmt th{
+    font-family:var(--mincho); font-weight:600; color:var(--navy);
+    font-size:16.5px; letter-spacing:.08em; white-space:nowrap;
+  }
+  table.stmt td{
+    text-align:right; font-size:clamp(15px, 3.87vw, 20px); font-weight:600; color:var(--navy);
+    letter-spacing:.02em; white-space:nowrap;
+  }
+  table.stmt tr:first-child th, table.stmt tr:first-child td{ padding-top:2px; }
+  table.stmt tr.muted th{ color:#7a7a86; }
+  table.stmt tr.muted td{ color:#7a7a86; font-size:17.5px; }
+  table.stmt tr.total th, table.stmt tr.total td{
+    border-bottom:none; border-top:1px solid var(--gold); padding-top:20px;
+  }
+  table.stmt tr.total td{ font-size:clamp(19px, 5.22vw, 27px); color:#8a6d1f; }
+  .stmt-cap{
+    text-align:center; font-size:13px; color:#7a7a86; letter-spacing:.05em;
+    margin-top:14px; line-height:1.9;
+  }
+
+  /* ---- ボタン（枠線のみ・角なし） ---- */
+  .pill{
+    display:inline-flex; align-items:center; justify-content:center; gap:14px;
+    border:1px solid var(--gold); border-radius:0; background:transparent;
+    padding:24px 64px; color:var(--navy); text-decoration:none;
+    font-weight:400; font-size:13px; letter-spacing:.22em; line-height:1.6;
+    box-shadow:none;
+    transition:background .5s ease, color .5s ease, border-color .5s ease;
+  }
+  .pill:hover, .pill:focus-visible{ background:var(--navy); color:#fff; border-color:var(--navy); }
+  /* 暗い面の上に置く場合（地色と衝突させず、枠の金だけを明るくする） */
+  .pill--light{ color:#fff; border-color:var(--gold); }
+  .pill--light:hover, .pill--light:focus-visible{ background:transparent; color:#fff; border-color:#E8E2BF; }
+  /* 従：枠を持たないテキストリンク */
+  .pill--text{
+    border:none; border-bottom:1px solid rgba(59,63,114,.35);
+    padding:10px 4px; background:transparent; color:var(--navy);
+    transition:border-color .5s ease, color .5s ease;
+  }
+  .pill--text:hover, .pill--text:focus-visible{ background:transparent; color:var(--navy); border-color:var(--navy); }
+  .pill--text.pill--light{ border-bottom:1px solid rgba(255,255,255,.35); color:#fff; }
+  .pill--text.pill--light:hover{ border-color:rgba(255,255,255,.8); }
+  .pill-row{ display:flex; flex-wrap:wrap; gap:14px; margin-top:46px; justify-content:center; }
+  .pill-row + .pill-row{ margin-top:22px; }
+
+  /* =========================================================
+     暗転：お受けする条件（全幅の紺・金の細枠ひとつ）
+     ========================================================= */
+  .terms{ background:var(--navy); color:#fff; padding:200px 0; }
+  .terms-box{
+    max-width:680px; margin:0 auto; padding:96px 64px;
+    border:1px solid rgba(195,188,145,.45); text-align:center;
+  }
+  .terms h2{
+    font-family:var(--mincho); font-size:clamp(19px, 4.45vw, 23px); font-weight:600;
+    color:#fff; letter-spacing:.14em; line-height:1.6; margin-bottom:9px;
+  }
+  .terms .h2en{
+    font-family:var(--serif-en); font-style:italic; font-size:12.5px;
+    color:var(--gold); letter-spacing:.16em; line-height:1.4;
+    padding-bottom:22px; margin-bottom:52px;
+    border-bottom:1px solid rgba(195,188,145,.30);
+  }
+  .terms .stmt-list{ margin:0 0 52px; }
+  .terms .stmt-list li{
+    border-bottom:none; padding:0;
+    font-family:var(--mincho); font-weight:600; color:var(--gold);
+    font-size:clamp(28px, 3vw, 44px); letter-spacing:.30em; line-height:1.7;
+    text-indent:.30em;
+  }
+  .terms p{
+    color:rgba(255,255,255,.72); font-size:13.5px; line-height:2.4;
+    letter-spacing:.03em; margin-bottom:1.2em;
+  }
+  .terms p:last-child{ margin-bottom:0; }
+  .act3--cont{ padding-top:120px; }
+
+  /* =========================================================
+     第4幕：黒フッター
+     ========================================================= */
+  .act4{
+    position:relative; overflow:hidden;
+    background:var(--act4bg); color:#fff; text-align:center;
+    padding:96px 0 96px;
+  }
+  .act4 > .wrap{ position:relative; z-index:2; }
+  .act4 .flogo{ display:flex; justify-content:center; align-items:center; gap:15px; margin:0; }
+  .act4 .flogo .word{
+    font-family:"Avenir Next","Futura","Helvetica Neue",var(--gothic);
+    font-weight:500; font-size:17px; letter-spacing:.28em; color:#fff; line-height:1;
+  }
+  .act4 .fassoc{
+    margin-top:26px; font-size:13px; letter-spacing:.1em; line-height:2;
+    color:rgba(255,255,255,.72);
+  }
+  .act4 .fcopy{
+    margin-top:44px; font-size:13px; letter-spacing:.08em; line-height:2;
+    color:rgba(255,255,255,.55);
+  }
+
+  /* =========================================================
+     フェードイン
+     ========================================================= */
+  .js .reveal{
+    opacity:0; transform:translateY(24px);
+    transition:opacity .7s ease, transform .7s ease;
+  }
+  .js .reveal.is-in{ opacity:1; transform:none; }
+  /* 初回描画時すでに画面内にある要素は待たずに出す（アニメーションなし） */
+  .js .reveal.instant{ transition:none; }
+
+  /* 中身を1つずつ送り出すブロックは、器そのものは動かさない */
+  .js .reveal.has-st{ opacity:1; transform:none; transition:none; }
+  .js .st{
+    opacity:0; transform:translateY(14px);
+    transition:opacity .6s ease, transform .6s ease;
+  }
+  .js .reveal.is-in .st{ opacity:1; transform:none; }
+  .js tr.st{ transform:none; }
+  .js .reveal.instant .st{ transition:none; transition-delay:0s !important; }
+
+  @media (prefers-reduced-motion: reduce){
+    .js .reveal{ opacity:1; transform:none; transition:none; }
+    .js .st{ opacity:1; transform:none; transition:none; }
+  }
+
+  /* =========================================================
+     レスポンシブ
+     ========================================================= */
+  @media (max-width:640px){
+    body{ font-size:15.5px; }
+    .wrap{ padding:0 22px; }
+    .cards{ padding:0 16px; }
+
+    header.site{ padding:26px 22px 0; }
+    .logo{ gap:13px; }
+    .logo svg, .logo .mark{ width:42px; height:35px; }
+    .logo .word{ font-size:16px; letter-spacing:.28em; }
+
+    /* 縦長の画面では折り紙の面を横広に振り直す（細い帯にしない） */
+    .act1 .k1{ clip-path:polygon(100% 0, 82% 0, 100% 2%); }
+    .act1 .k2{ clip-path:polygon(100% 0, 66% 0, 100% 4%); }
+    .act1 .k3{ clip-path:polygon(100% 0, 50% 0, 100% 7%); }
+    .act1 .k4{ clip-path:polygon(100% 0, 34% 0, 100% 10%); }
+    .act1 .k5{ clip-path:polygon(100% 0, 18% 0, 100% 13%); }
+    .act1 .k6{ clip-path:polygon(100% 0, 2% 0, 100% 17%); }
+    .act1 .k7{ clip-path:polygon(100% 0, 0 0, 0 2%, 100% 21%); }
+    .act1 .k8{ clip-path:polygon(100% 0, 0 0, 0 6%, 100% 25%); }
+    .act1 .k9{ clip-path:polygon(100% 0, 0 0, 0 10%, 100% 30%); }
+    .act1 .k10{ clip-path:polygon(100% 0, 0 0, 0 15%, 100% 35%); }
+    .act1 .k11{ clip-path:polygon(100% 0, 0 0, 0 20%, 100% 41%); }
+    .act1 .k12{ clip-path:polygon(100% 0, 0 0, 0 26%, 100% 47%); }
+    .act1 .k13{ clip-path:polygon(100% 0, 0 0, 0 32%, 100% 53%); }
+    .act1 .k14{ clip-path:polygon(100% 0, 0 0, 0 38%, 100% 60%); }
+    .act1 .k15{ clip-path:polygon(100% 0, 0 0, 0 45%, 100% 67%); }
+    .act1 .k16{ clip-path:polygon(100% 0, 0 0, 0 52%, 100% 74%); }
+    .act1 .b1{ clip-path:polygon(0 74%, 100% 86%, 100% 100%, 0 100%); }
+    .act1 .b2{ clip-path:polygon(0 81%, 100% 90%, 100% 100%, 0 100%); }
+    .act1 .b3{ clip-path:polygon(0 88%, 100% 94%, 100% 100%, 0 100%); }
+    .act1 .b4{ clip-path:polygon(0 94%, 100% 98%, 100% 100%, 0 100%); }
+    .dawn .d1{ clip-path:polygon(0 0, 100% 0, 100% 62%, 0 84%); }
+    .dawn .d2{ clip-path:polygon(100% 0, 100% 21%, 61% 0); }
+    .dawn .d3{ clip-path:polygon(100% 0, 100% 9%, 82% 0); }
+    .dawn .d4{ clip-path:polygon(0 100%, 100% 80%, 100% 100%); }
+    .act2 .g1{ clip-path:polygon(0 0, 100% 0, 100% 24%, 0 38%); }
+    .act2 .g2{ clip-path:polygon(0 100%, 100% 58%, 100% 100%); }
+    .act2 .g3{ clip-path:polygon(100% 100%, 100% 78%, 66% 100%); }
+
+    .act1{ padding-bottom:132px; }
+    .hero{ padding:72px 0 0; }
+    .hero .en{ font-size:12px; margin-bottom:38px; }
+    .monologue p{ line-height:2.05; }
+    .monologue p.s1{ font-size:16.5px; }
+    .monologue p.s2{ font-size:16.5px; }
+    .monologue p.s3{ font-size:13.5px; }
+    .monologue p.strong{ line-height:1.6; margin-top:0; letter-spacing:.04em; }
+
+    .lede{ margin-top:62px; }
+    .lede p{ font-size:15.5px; line-height:2.0; margin-bottom:22px; }
+    .lede p.big{ line-height:1.85; margin:30px 0 28px; letter-spacing:.05em; }
+    .estate-fig{ margin:30px 0 32px; }
+
+    .fm1{ height:120px; }
+    .fm2{ height:88px; }
+    .fm3{ height:60px; }
+    .fm4{ height:38px; }
+    .dawn{ padding:142px 0 112px; }
+    .dawn .rule{ margin:0 auto 36px; }
+    .dawn h1{ font-size:19px; line-height:1.85; letter-spacing:.03em; text-indent:.03em; }
+    br.sp{ display:inline; }
+    .foldDawn{ height:62px; }
+
+    .act2{ padding:76px 0 150px; }
+    .foldDiag{ height:70px; }
+    .sec-head{ margin-bottom:36px; padding:0 16px; }
+    .sec-head h2{ letter-spacing:.05em; }
+    .sec-head .en{ font-size:12px; }
+
+    .act3{ padding:24px 0 84px; }
+    .act3--cont{ padding-top:60px; }
+    .terms{ padding:120px 0; }
+    .terms-box{ padding:52px 24px; }
+    .terms .h2en{ margin-bottom:36px; }
+    .terms .stmt-list{ margin:0 0 36px; }
+    .terms .stmt-list li{ letter-spacing:.14em; text-indent:.14em; line-height:1.6; }
+    .terms p{ font-size:13px; line-height:2.2; }
+    .card{ padding:42px 24px 36px; margin-bottom:30px; border-radius:0; }
+    .card--float{ padding:38px 24px 34px; margin-bottom:26px; }
+    .card h2{ letter-spacing:.05em; }
+    .card .h2en{ font-size:11.5px; padding-bottom:18px; margin-bottom:28px; }
+    .card p.lead-line{ letter-spacing:.05em; }
+    .card p.key{ margin-top:24px; letter-spacing:.05em; }
+
+    .rule-list li{ grid-template-columns:1fr; row-gap:2px; column-gap:0; padding:18px 2px; }
+    .rule-list .who{ font-size:16px; }
+    .stmt-list li{ font-size:17px; padding:18px 2px; }
+
+    .gets{ grid-template-columns:repeat(2,1fr); margin:12px 0 34px; }
+    .gets span{ padding:24px 4px; letter-spacing:.05em; }
+    .gets span:nth-child(odd){ border-left:none; }
+    .gets span:nth-child(n+3){ border-top:1px solid rgba(138,138,184,.22); }
+    .card p.key--lead{ line-height:1.85; letter-spacing:.05em; }
+
+    .handover{ grid-template-columns:1fr; margin:28px 0 28px; }
+    .ho-keep, .ho-arrow, .ho-take, .ho-down, .ho-system{ grid-column:1; grid-row:auto; }
+    .ho-arrow{ padding:14px 0; }
+    .ho-arrow svg{ transform:rotate(90deg); }
+    .ho-down{ padding:11px 0 9px; }
+    .ho-system{ padding:15px 14px 13px; }
+    .ho-system-main{ font-size:14.5px; letter-spacing:.03em; }
+    .ho-system-sub{ font-size:11.5px; }
+    .ho-keep{ padding:24px 18px 20px; }
+    .ho-keep-list li{ padding:11px 0; letter-spacing:.05em; }
+    .ho-take{ padding:22px 16px 20px; }
+    .ho-label{ font-size:11.5px; letter-spacing:.13em; margin-bottom:15px; }
+    .ho-chips{ gap:7px; }
+    .ho-chips span{ font-size:12.5px; padding:8px 10px; }
+
+    table.stmt th{ font-size:14.5px; letter-spacing:.02em; }
+    table.stmt tr.muted td{ font-size:15px; }
+    table.stmt th, table.stmt td{ padding:13px 0; }
+    .stmt-cap{ font-size:12.5px; }
+
+    .pill{ display:flex; justify-content:center; padding:21px 18px; font-size:12.5px; letter-spacing:.18em; }
+    .pill--text{ padding:10px 4px; align-self:center; }
+    .pill-row{ flex-direction:column; gap:12px; }
+
+    .act4{ padding:70px 0 70px; }
+    .act4 .fassoc{ margin-top:22px; font-size:12px; }
+    .act4 .fcopy{ margin-top:34px; font-size:12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== 第1幕 ===================== -->
+<div class="act1">
+  <div class="facet k16" aria-hidden="true"></div>
+  <div class="facet k15" aria-hidden="true"></div>
+  <div class="facet k14" aria-hidden="true"></div>
+  <div class="facet k13" aria-hidden="true"></div>
+  <div class="facet k12" aria-hidden="true"></div>
+  <div class="facet k11" aria-hidden="true"></div>
+  <div class="facet k10" aria-hidden="true"></div>
+  <div class="facet k9" aria-hidden="true"></div>
+  <div class="facet k8" aria-hidden="true"></div>
+  <div class="facet k7" aria-hidden="true"></div>
+  <div class="facet k6" aria-hidden="true"></div>
+  <div class="facet k5" aria-hidden="true"></div>
+  <div class="facet k4" aria-hidden="true"></div>
+  <div class="facet k3" aria-hidden="true"></div>
+  <div class="facet k2" aria-hidden="true"></div>
+  <div class="facet k1" aria-hidden="true"></div>
+  <div class="facet b1" aria-hidden="true"></div>
+  <div class="facet b2" aria-hidden="true"></div>
+  <div class="facet b3" aria-hidden="true"></div>
+  <div class="facet b4" aria-hidden="true"></div>
+  <div class="facet kasumi" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site">
+    <div class="logo" role="img" aria-label="Metoriarch">
+      <img src="data:image/png;base64,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" alt="Metoriarch" width="190" height="28" style="display:block;flex:none;">
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="en reveal">Back-office Management Platform</div>
+      <div class="monologue">
+        <p class="hero-seq s1"><span class="w">ずっとやりたい</span><span class="w">新しい事業が、</span><span class="w">まだ手付かず。</span></p>
+        <p class="hero-seq s2"><span class="w">新規事業や、</span><span class="w">本当にやるべきことが</span><span class="w">先延ばし。</span></p>
+        <p class="hero-seq s3"><span class="w">理由は、</span><span class="w">いつも同じです。</span></p>
+        <p class="hero-seq s4 strong"><span class="w">今の体制では、</span><span class="w">回らない。</span></p>
+      </div>
+    </div>
+
+    <div class="lede">
+      <div class="ana-label reveal">たとえば、不動産の世界</div>
+      <p class="reveal">不動産業界には、オーナーとは別に、管理をする会社がいます。建物を持つことと、建物を回すことは、別の仕事だからです。だからオーナーは、自分のキャパシティを超えずに、棟数を増やしていけます。</p>
+
+      <figure class="estate-fig reveal" role="img" aria-label="オーナーと管理会社が分かれていることで、棟数が増えても、オーナーのやることは増えない">
+        <svg viewBox="0 0 700 178" xmlns="http://www.w3.org/2000/svg">
+          <rect x="2" y="52" width="146" height="56" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1"/>
+          <text x="75" y="86" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="400" letter-spacing="2">オーナー</text>
+          <line x1="160" y1="80" x2="198" y2="80" stroke="#C3BC91" stroke-width="1"/>
+          <polyline points="199,73 206,80 199,87" fill="none" stroke="#C3BC91" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="218" y="52" width="164" height="56" fill="none" stroke="#C3BC91" stroke-width="1"/>
+          <text x="300" y="86" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="400" letter-spacing="2">管理会社</text>
+          <line x1="394" y1="80" x2="432" y2="80" stroke="#C3BC91" stroke-width="1"/>
+          <polyline points="433,73 440,80 433,87" fill="none" stroke="#C3BC91" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+          <g fill="none" stroke="rgba(255,255,255,.7)" stroke-width="1">
+            <rect x="460" y="66" width="36" height="62"/>
+            <rect x="508" y="78" width="36" height="50"/>
+            <rect x="556" y="56" width="36" height="72"/>
+            <rect x="604" y="72" width="36" height="56"/>
+            <rect x="652" y="48" width="36" height="80"/>
+          </g>
+          <text x="574" y="158" text-anchor="middle" fill="rgba(255,255,255,.8)" font-size="15" letter-spacing="2">5棟</text>
+        </svg>
+      </figure>
+
+      <p class="reveal big"><span class="w">5棟持っても、</span><span class="w">やることは</span><span class="w">増えません。</span></p>
+
+      <p class="reveal turn">会社にも、同じ構造があるはずです。事業を持つことと、会社を回すこと。でも会社には、回す側がいません。社長の右腕にあたる方が、自分の実務と兼務で、1人で受け止めています。</p>
+    </div>
+
+  </div>
+
+  <div class="fm fm1" aria-hidden="true"></div>
+  <div class="fm fm2" aria-hidden="true"></div>
+  <div class="fm fm3" aria-hidden="true"></div>
+  <div class="fm fm4" aria-hidden="true"></div>
+</div>
+
+<!-- ============ 明転：ここから昼の世界 ============ -->
+<section class="dawn">
+  <div class="dawnveil" aria-hidden="true"></div>
+  <div class="facet d1" aria-hidden="true"></div>
+  <div class="facet d2" aria-hidden="true"></div>
+  <div class="facet d3" aria-hidden="true"></div>
+  <div class="facet d4" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="wrap reveal">
+    <div class="rule" aria-hidden="true"></div>
+    <h1><span class="w">そこで、急成長企業に特化した、</span><br class="sp"><span class="w">会社を運営する会社を作りました。</span></h1>
+  </div>
+
+  <div class="foldDawn" aria-hidden="true"></div>
+</section>
+
+<!-- ===================== 第2幕 ===================== -->
+<section class="act2">
+  <div class="facet g1" aria-hidden="true"></div>
+  <div class="facet g2" aria-hidden="true"></div>
+  <div class="facet g3" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+
+  <div class="sec-head reveal">
+    <h2><span class="w">お預かりする範囲と、</span><span class="w">お金の動き</span></h2>
+    <div class="en">What We Take Over</div>
+  </div>
+
+  <div class="cards">
+
+    <article class="card card--float reveal">
+      <h2>お任せいただくもの</h2>
+      <div class="h2en">The Rooms</div>
+      <p class="lead-line"><span class="w">経営者が考えるのは、</span><span class="w">商品と営業のことだけ。</span></p>
+
+      <div class="handover">
+        <div class="ho-box ho-keep">
+          <div class="ho-label">御社に残るもの</div>
+          <ul class="ho-keep-list">
+            <li>商品</li>
+            <li>営業</li>
+            <li>最後の判断</li>
+          </ul>
+        </div>
+
+        <div class="ho-arrow" aria-hidden="true">
+          <svg width="44" height="20" viewBox="0 0 44 20" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="10" x2="36" y2="10" stroke="#C3BC91" stroke-width="1"/>
+            <polyline points="36,3 43,10 36,17" fill="none" stroke="#C3BC91" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="ho-box ho-take">
+          <div class="ho-label">Metoriarchが引き受けるもの</div>
+          <div class="ho-chips">
+            <span>経理</span>
+            <span>給与計算</span>
+            <span>請求</span>
+            <span>人事</span>
+            <span>総務</span>
+            <span>法務の事務</span>
+            <span>営業事務</span>
+            <span>人材育成</span>
+            <span>マネジメント</span>
+          </div>
+        </div>
+
+        <div class="ho-down" aria-hidden="true">
+          <svg width="20" height="42" viewBox="0 0 20 42" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="0" x2="10" y2="34" stroke="#C3BC91" stroke-width="1"/>
+            <polyline points="3,34 10,41 17,34" fill="none" stroke="#C3BC91" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="ho-system">
+          <div class="ho-system-main">Metoriarchが、全てを引き受けます</div>
+        </div>
+      </div>
+    </article>
+
+    <article class="card card--float reveal">
+      <h2>お金の流れ</h2>
+      <div class="h2en">How Money Moves</div>
+
+      <figure class="bizmodel" role="img" aria-label="お金と役割の流れ図">
+        <svg viewBox="0 0 720 560" xmlns="http://www.w3.org/2000/svg" style="width:100%;max-width:600px;height:auto;display:block;margin:8px auto 30px;">
+          <!-- 御社 -->
+          <rect x="180" y="20" width="360" height="86" fill="none" stroke="#3B3F72" stroke-width="0.75"/>
+          <text x="360" y="56" text-anchor="middle" fill="#3B3F72" font-size="22" font-weight="400" letter-spacing="3">御社</text>
+          <text x="360" y="84" text-anchor="middle" fill="#3B3F72" font-size="13.5" letter-spacing="1">社長に残るのは、営業と最終の判断だけ</text>
+          <!-- 下向き矢印 左（任せる） -->
+          <line x1="255" y1="106" x2="255" y2="190" stroke="#3B3F72" stroke-width="0.75"/>
+          <polyline points="248,189 255,196 262,189" fill="none" stroke="#3B3F72" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="243" y="152" text-anchor="end" fill="#3B3F72" font-size="13.5" letter-spacing="1">営業以外の業務を、まとめて任せる</text>
+          <!-- 上向き矢印 右（返す） -->
+          <line x1="465" y1="196" x2="465" y2="112" stroke="#C3BC91" stroke-width="0.75"/>
+          <polyline points="458,113 465,106 472,113" fill="none" stroke="#C3BC91" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="477" y="152" text-anchor="start" fill="#3B3F72" font-size="13.5" letter-spacing="1">精算書1枚と「使っていいお金」</text>
+          <!-- Metoriarch -->
+          <rect x="180" y="196" width="360" height="104" fill="none" stroke="#3B3F72" stroke-width="0.75"/>
+          <text x="360" y="234" text-anchor="middle" fill="#3B3F72" font-size="20" font-weight="400" letter-spacing="2.5">Metoriarch</text>
+          <text x="360" y="262" text-anchor="middle" fill="#3B3F72" font-size="13.5" letter-spacing="1">経理・給与計算・請求・労務・総務・採用支援</text>
+          <text x="360" y="284" text-anchor="middle" fill="#a3995f" font-size="13.5" letter-spacing="1">運営費は売上に連動（5〜10%・査定制）</text>
+          <!-- 下：口座の器 -->
+          <line x1="360" y1="300" x2="360" y2="354" stroke="#3B3F72" stroke-width="0.75"/>
+          <polyline points="353,353 360,360 367,353" fill="none" stroke="#3B3F72" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="120" y="360" width="480" height="112" fill="none" stroke="#3B3F72" stroke-width="0.75" stroke-dasharray="6 4"/>
+          <text x="360" y="398" text-anchor="middle" fill="#3B3F72" font-size="17" font-weight="400" letter-spacing="2">御社名義の口座</text>
+          <text x="360" y="426" text-anchor="middle" fill="#3B3F72" font-size="13.5" letter-spacing="1">入金も、給与・税金・社会保険の支払いも、すべて御社名義のまま</text>
+          <text x="360" y="450" text-anchor="middle" fill="#3B3F72" font-size="13.5" letter-spacing="1">振込の実行承認は、社長ご本人</text>
+          <!-- 入口注記 -->
+          <text x="360" y="522" text-anchor="middle" fill="#3B3F72" font-size="13" letter-spacing="1.5">入口は無料査定。</text>
+        </svg>
+      </figure>
+
+      <p class="ctr">料金は、業種や丸投げしたい範囲に応じた独自の計算式で決まります。売上の5〜10%を、査定で定めます。</p>
+      <p class="ctr">業界別の適正な管理コストの基準は、日本バックオフィス協会（設立準備中）が、出典と計算式まで公開します。</p>
+      <p class="ctr">メトリアーチが管理する、御社名義の口座を準備します。</p>
+      <p class="ctr">入金も出金も、すべて御社名義のまま。</p>
+      <p class="key"><span class="w">給与計算も、</span><span class="w">税金の積立も、</span><span class="w">社会保険料も。</span><br><span class="w">メトリアーチが行います。</span></p>
+    </article>
+
+    <article class="card card--float reveal">
+      <h2>精算書</h2>
+      <div class="h2en">The Monthly Sheet</div>
+      <p class="lead-line">毎月届く精算書は1枚。</p>
+      <p class="ctr">利益からさらに、予想される消費税を計算して天引きします。</p>
+
+      <div class="stmt-wrap">
+        <table class="stmt">
+          <caption class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;">毎月の精算書（金額の例）</caption>
+          <tbody>
+            <tr><th>入金</th><td>52,000,000</td></tr>
+            <tr><th>支払</th><td>43,000,000</td></tr>
+            <tr class="muted"><th>消費税の積立</th><td>▲2,370,000</td></tr>
+            <tr class="total"><th>お振込額</th><td>6,630,000</td></tr>
+          </tbody>
+        </table>
+        <p class="stmt-cap">金額は一例です。単位は円。</p>
+      </div>
+
+      <p class="key"><span class="w">残った金額を、</span><span class="w">御社がもともと</span><span class="w">管理されている</span><br><span class="w">口座へお振り込みします。</span></p>
+    </article>
+
+  </div>
+
+  <div class="foldDiag" aria-hidden="true"></div>
+</section>
+
+<!-- ===================== 第3幕 ===================== -->
+<main class="act3">
+  <div class="cards">
+
+    <section class="card reveal">
+      <h2>標準サポート</h2>
+      <div class="h2en">Standard Support</div>
+      <ul class="rule-list">
+        <li><span class="who">税理士</span><span class="desc">隔月の面談。顧問料も込みです。</span></li>
+        <li><span class="who">公認会計士</span><span class="desc">四半期ごとの面談。上場とM&amp;Aの支援実績があります。</span></li>
+        <li><span class="who">社労士</span><span class="desc"><span class="w">給与計算と</span><span class="w">社会保険の</span><span class="w">手続きを担当します。</span></span></li>
+        <li><span class="who">弁護士</span><span class="desc"><span class="w">法務の相談窓口です。</span><span class="w">提携事務所が対応します。</span></span></li>
+      </ul>
+      <p class="key"><span class="w">探す、選ぶ、比較する、</span><span class="w">契約する、</span><br><span class="w">弊社にお任せください。</span></p>
+    </section>
+
+    <section class="card reveal">
+      <h2>手に入るもの</h2>
+      <div class="h2en">What You Get</div>
+      <div class="gets">
+        <span>新規事業</span>
+        <span>採用教育</span>
+        <span>新拠点</span>
+        <span>資金調達</span>
+      </div>
+      <p class="key key--lead"><span class="w">管理が追いつかないことを</span><span class="w">理由に、</span><br><span class="w">止める場面がなくなります。</span></p>
+      <p class="ctr">社長は、数字を上げることと、人と会う時間に集中できます。</p>
+      <p class="ctr"><span class="w">先に延ばしていたものが、</span><span class="w">動き出します。</span></p>
+      <p class="ctr">月次が早い会社は、銀行からの見え方が変わります。四半期ごとの公認会計士の面談が、資金調達の裏づけになります。</p>
+      <p class="ctr">本社機能のコストが売上の10%未満に収まるため、上場やM&amp;Aの出口戦略にもそのまま活きます。年商の壁を越えて内製化へ進む場合は、内製化支援に切り替え、業務の引き継ぎと社員研修までサポートします。</p>
+    </section>
+
+  </div>
+</main>
+
+<!-- ===== 暗転：お受けする条件 ===== -->
+<section class="terms">
+  <div class="wrap">
+    <div class="terms-box reveal">
+      <h2>お受けする条件</h2>
+      <div class="h2en">Conditions</div>
+      <ul class="stmt-list">
+        <li>年商3億円以上</li>
+      </ul>
+      <p>この条件に加えて、決算書を1期分拝見した上で、お受けするかを判断します。来期に年商3億円が見込まれる場合は、見込みを含めて判断します。</p>
+      <p><span class="w">同時にお預かりできる</span><span class="w">社数に限りがあります。</span><span class="w">順番をお待ちいただく</span><span class="w">ことがあります。</span></p>
+    </div>
+  </div>
+</section>
+
+<main class="act3 act3--cont">
+  <div class="cards">
+
+    <section class="card reveal">
+      <h2>ご紹介について</h2>
+      <div class="h2en">Referral</div>
+      <p class="ctr">ご紹介いただいた会社が、Metoriarchを導入された場合。</p>
+      <p class="key"><span class="w">その会社の運営費用の10%を、</span><span class="w">毎月お支払いします。</span></p>
+      <p class="ctr">導入されている間、ずっとお受け取りいただけます。</p>
+      <p class="note">例：ご紹介いただいた会社の運営費用が月500万円の場合、お受け取りいただくご紹介料は毎月50万円</p>
+    </section>
+
+    <section class="card reveal">
+      <h2>入口</h2>
+      <div class="h2en">How to Start</div>
+      <p class="key"><span class="w">ご紹介がない場合も、</span><span class="w">面談をお申し込みいただけます。</span></p>
+      <p class="ctr">面談の後、公認会計士が御社のバックオフィスを査定します。この査定に、料金は頂戴しておりません。</p>
+      <p>決算書を1期分お預かりし、営業以外のコストが今いくらで、メトリアーチにお預けいただいた場合にいくらになるかを、1枚にしてお渡しします。</p>
+      <div class="pill-row">
+        <a class="pill" href="./meeting.html">面談を申し込む</a>
+      </div>
+      <div class="pill-row">
+        <a class="pill pill--text" href="./index.html">会社案内を見る</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- ===================== 第4幕 ===================== -->
+<footer class="act4">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="wrap reveal">
+    <div class="flogo" role="img" aria-label="Metoriarch">
+      <img src="data:image/png;base64,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" alt="Metoriarch" width="165" height="24" style="display:block;flex:none;">
+    </div>
+    <div class="fassoc">日本バックオフィス協会（運営：株式会社Metoriarch）</div>
+    <div class="fcopy">© 株式会社Metoriarch（旧 株式会社second youth）</div>
+  </div>
+</footer>
+
+<script>
+/* 保険：ヒーローの4行は、アニメーションが動かない環境でも4秒後に必ず出す */
+(function(){
+  setTimeout(function(){
+    var q = document.querySelectorAll('.hero-seq');
+    for (var i=0;i<q.length;i++){ q[i].classList.add('done'); }
+  }, 4000);
+})();
+
+/* 夜→昼：明転セクションが見えたら、上端に残した夜の暗さをゆっくり引かせる */
+(function(){
+  var root = document.documentElement;
+  var dawn = document.querySelector('.dawn');
+  if (!dawn) return;
+  function lit(){ dawn.classList.add('is-lit'); }
+  if (!root.classList || !root.classList.contains('js')) return;
+  if (!('IntersectionObserver' in window)) { lit(); return; }
+  var dio = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ lit(); dio.unobserve(e.target); } });
+  }, { rootMargin: '0px 0px -12% 0px', threshold: 0 });
+  dio.observe(dawn);
+  /* 保険：3秒たっても明転していなければ明るくする */
+  setTimeout(lit, 3000);
+})();
+
+(function(){
+  var root = document.documentElement;
+  var targets = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  if (!targets.length) return;
+
+  function showAll(instant){
+    for (var i=0;i<targets.length;i++){
+      if (instant) targets[i].classList.add('instant');
+      targets[i].classList.add('is-in');
+    }
+  }
+
+  /* .js が付いていない＝フェードインを使わない環境。全文がすでに見えているので何もしない */
+  if (!root.classList || !root.classList.contains('js')) return;
+
+  if (!('IntersectionObserver' in window)) { showAll(true); return; }
+
+  /* --- 中身を1つずつ送り出す準備：器の子要素に順番の待ち時間を割り当てる --- */
+  var SKIP = { facet:1, noise:1, dawnveil:1, foldM:1, foldDawn:1, foldDiag:1 };
+  var GROUP = { 'stmt-wrap':1, 'gets':1, 'handover':1, 'pill-row':1, 'closing':1, 'flogo':1 };
+  var STEP = 0.09, MAXDELAY = 1.0;
+
+  function skipped(el){
+    var c = el.className;
+    if (typeof c !== 'string') return false;
+    var parts = c.split(/\s+/);
+    for (var i=0;i<parts.length;i++){ if (SKIP[parts[i]]) return true; }
+    return false;
+  }
+  function isGroup(el){
+    var c = el.className;
+    if (typeof c !== 'string') return false;
+    var parts = c.split(/\s+/);
+    for (var i=0;i<parts.length;i++){ if (GROUP[parts[i]]) return true; }
+    return false;
+  }
+  function collect(el){
+    var out = [], kids = el.children;
+    for (var i=0;i<kids.length;i++){
+      var k = kids[i];
+      if (skipped(k)) continue;
+      var tag = k.tagName;
+      if (tag === 'UL' || tag === 'OL'){
+        for (var a=0;a<k.children.length;a++) out.push(k.children[a]);
+      } else if (tag === 'TABLE'){
+        var rows = k.querySelectorAll('tbody > tr');
+        for (var b=0;b<rows.length;b++) out.push(rows[b]);
+      } else if (isGroup(k)){
+        out = out.concat(collect(k));
+      } else {
+        out.push(k);
+      }
+    }
+    return out;
+  }
+
+  for (var s=0;s<targets.length;s++){
+    var box = targets[s];
+    if (box.classList.contains('hero')) continue;
+    var kids = collect(box);
+    if (kids.length < 2) continue;
+    box.classList.add('has-st');
+    for (var t=0;t<kids.length;t++){
+      kids[t].classList.add('st');
+      var d = t * STEP;
+      kids[t].style.transitionDelay = (d > MAXDELAY ? MAXDELAY : d) + 's';
+    }
+  }
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting){ e.target.classList.add('is-in'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -5% 0px', threshold: 0 });
+
+  for (var j=0;j<targets.length;j++){ io.observe(targets[j]); }
+
+  /* すでに画面内にあるものは IntersectionObserver の初回通知を待たず、その場で表示する */
+  function revealInView(){
+    var vh = window.innerHeight || root.clientHeight || 0;
+    for (var i=0;i<targets.length;i++){
+      var el = targets[i];
+      if (el.classList.contains('is-in')) continue;
+      var r = el.getBoundingClientRect();
+      if (r.top < vh && r.bottom > 0){
+        el.classList.add('instant');
+        el.classList.add('is-in');
+        io.unobserve(el);
+      }
+    }
+  }
+  revealInView();
+  window.addEventListener('load', revealInView);
+  window.addEventListener('resize', revealInView);
+
+  /* 保険：2.5秒たっても1つも表示されていなければ全部出す */
+  setTimeout(function(){
+    for (var i=0;i<targets.length;i++){
+      if (targets[i].classList.contains('is-in')) return;
+    }
+    showAll(true);
+  }, 2500);
+})();
+</script>
+
+</body>
+</html>
