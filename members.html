@@ -17,14 +17,87 @@ h1{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:clamp(22px,4.6
 .txt{margin-top:30px;font-size:14.5px;color:#5F5F70;}
 a{display:inline-block;margin-top:38px;padding:13px 34px;border:1px solid rgba(64,66,131,.5);color:#404283;text-decoration:none;font-size:13px;letter-spacing:.18em;text-indent:.18em;transition:background .3s,color .3s;}
 a:hover{background:#404283;color:#F7F5EE;}
+
+/* ===== ヘッダー（共通） ===== */
+.gnav{ position:fixed; top:0; left:0; right:0; z-index:9000; height:64px;
+  display:flex; align-items:center; justify-content:space-between; margin:0; max-width:none;
+  padding:0 clamp(18px,4vw,44px); background:rgba(28,31,61,0); box-sizing:border-box;
+  transition:background .45s ease, box-shadow .45s ease; }
+.gnav.is-solid{ background:rgba(28,31,61,.92); -webkit-backdrop-filter:blur(8px); backdrop-filter:blur(8px);
+  box-shadow:0 1px 0 rgba(195,188,145,.28); }
+.gnav a, .gnav-drawer a{ margin:0; border:0; background:none; text-indent:0; box-shadow:none; }
+.gnav .gnav-logo{ display:flex; align-items:center; padding:0; opacity:0; pointer-events:none; transition:opacity .45s ease; }
+.gnav.is-solid .gnav-logo, .gnav.is-open .gnav-logo{ opacity:1; pointer-events:auto; }
+.gnav .gnav-logo img{ display:block; height:22px; width:auto; }
+.gnav-list{ display:flex; align-items:center; gap:clamp(16px,2.2vw,34px); }
+.gnav .gnav-list a{ display:inline; color:rgba(247,245,238,.88); text-decoration:none; font-size:13px; line-height:1.6;
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif; letter-spacing:.14em;
+  padding:6px 0; border-bottom:1px solid transparent; transition:border-color .3s ease, color .3s ease; white-space:nowrap; }
+.gnav .gnav-list a:hover, .gnav .gnav-list a:focus-visible{ color:#fff; background:none; border-bottom-color:#E5DDAF; }
+.gnav-btn{ display:none; }
+.gnav-drawer{ display:none; }
+body.gnav-pad{ padding-top:64px; }
+html{ scroll-padding-top:68px; }
+@media (max-width:900px){
+  .gnav{ height:58px; }
+  body.gnav-pad{ padding-top:58px; }
+  html{ scroll-padding-top:62px; }
+  .gnav-list{ display:none; }
+  .gnav-btn{ display:block; position:relative; width:44px; height:44px; margin:0 -6px 0 0; padding:0;
+    background:none; border:0; cursor:pointer; }
+  .gnav-btn span{ position:absolute; left:11px; right:11px; height:1.5px; background:#F7F5EE;
+    transition:transform .35s ease, top .35s ease, opacity .25s ease; }
+  .gnav-btn span:nth-child(1){ top:15px; }
+  .gnav-btn span:nth-child(2){ top:21.5px; }
+  .gnav-btn span:nth-child(3){ top:28px; }
+  .gnav.is-open .gnav-btn span:nth-child(1){ top:21.5px; transform:rotate(45deg); }
+  .gnav.is-open .gnav-btn span:nth-child(2){ opacity:0; }
+  .gnav.is-open .gnav-btn span:nth-child(3){ top:21.5px; transform:rotate(-45deg); }
+  .gnav.is-open{ background:rgba(28,31,61,.98); box-shadow:none; }
+  .gnav-drawer{ display:block; position:fixed; top:58px; left:0; right:0; bottom:0; z-index:8999; overflow-y:auto;
+    background:linear-gradient(168deg,#2b2f5e 0%,#1C1F3D 100%); text-align:left;
+    opacity:0; visibility:hidden; transition:opacity .35s ease, visibility .35s ease; }
+  .gnav-drawer.is-open{ opacity:1; visibility:visible; }
+  .gnav-drawer nav{ display:flex; flex-direction:column; padding:18px 28px 48px; }
+  .gnav-drawer nav a{ display:block; color:#F7F5EE; text-decoration:none;
+    font-family:"Hiragino Mincho ProN","Yu Mincho",serif; font-size:17px; line-height:1.6;
+    letter-spacing:.12em; padding:19px 2px; border-bottom:1px solid rgba(195,188,145,.22); }
+  .gnav-drawer nav a:hover{ background:none; color:#fff; }
+  .gnav-drawer nav a:last-child{ border-bottom:none; }
+  body.nav-lock{ overflow:hidden; }
+}
 </style>
 </head>
-<body>
+<body class="gnav-pad">
+<div class="gnav is-solid" id="gnav" role="banner" data-solid="1">
+  <a class="gnav-logo" href="./index.html" aria-label="株式会社Metoriarch トップへ"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAsCAYAAAAq/ZsdAAADdUlEQVR42tWZPagcVRiGn7N3xUSDSmKjaNIo4k8jIsEq+E9UEEXj1RRaRBsLSUAb0wQhWmilooU/YBTCLRRBBJEg6kVtLBJIEeEiFkqCohBQo3fvPBaeA5/D3bg/M/tzmh3m7Mz5nj3nfec9s6ivqQsA5XOeWqg9qa/gv+1j9aLc0Z1DmAvUD1VR/8pQx9Wr5gWq1KheoR7NDD3UnrqaT/ys3jrrUAFmh3oy175aZqhX6MLnnjKlapohkBSW2aPq37Xa/wOkuqZW+fhguFFnBmA65cdVD+Qaq1yz/YDKl8q5w+rGaTtgmJVz1UNhVqpa7esCGdek+rV62bR0FfRyifplrTaHAYoX/qDeOGmoAHO9uvJ/MIMARcH9rj4wCbPI4i8w96qnB4EZFMia8J4Jg3ZaEn8nH+/tU8PYQHVHeT0MutBSjHl5HedtFKhAlWn/RN3clK7CErtQ/SgssWqI+oYGqpvFcfXqcaECzJXqsUH10iRQHPAX9fZRoQLMzeqpcWDGBarHpceHccBajHlsvRgzDaC6aF8YJC7FPvW5fjFmWkD1uLSkntfPAcOsbFDfO1uMmSZQXVffqJevMxtFL5eqy+PqZRJA/eJSJ8DcoH7fBoxZmD2g6SS9CpwDVMB1wImUUqXeB7wDbALWWhiXNvY5axlmDdgLrGSYfcD7GaZqA6as6zY09Jt6Txjj1VFizCitya1AD+gC3wG7UkpH1S3AIWBn7l8AWt3SdxuG+Qx4JKV0MkeipayhXoNjtaohs1a6wNvAzgxzG/D5pGHG1VB8qu8P99sTtNRzwm1UoHLNn+ruAHOwyRgzKVMoS+hHYDGltKyeD7wBLOYl2GnpkdC4KRSYb4GHUkor6lbgMHDTxPUyhikYiv0AuCXDbAe+mBWYQYGqDNQFXkop3Z9SOp3fAB0BtgWnm4n3xb0BxF+pT4Zrnh72bcwsuFyx3l/Vu0v8z3+QTSTGNOlyRQ8ncow5pl4MvAvcOakY05TLFZgjwO6U0in1mhxjrp0V8Q9iCjHGvAXclWHuyDFm5mGiKURhPxv6nphmjBnVFM7k4z/UhwPM89OOMaNuwQV+Ah5MKX2lbgLeBHaFGJOYk9YBloEdGWYb8GmGmVknO1tL6oaU0pkcY5aArXMh/n5AWS+L2dk25qjTYU5bUp8CXgy2vZCP57L9AwOsY7KSvg52AAAAAElFTkSuQmCC" alt="" width="26" height="22"></a>
+  <nav class="gnav-list" aria-label="サイト内メニュー"><a href="./index.html#rinen">理念</a><a href="./index.html#zentai">事業の全体像</a><a href="./index.html#group">Projects</a><a href="./index.html#daihyo">代表について</a><a href="./members.html" aria-current="page">メンバー紹介</a><a href="./index.html#gaiyo">会社概要</a><a href="./index.html#contact">お問い合わせ</a></nav>
+  <button class="gnav-btn" type="button" aria-expanded="false" aria-controls="gnav-drawer" aria-label="メニューを開く"><span></span><span></span><span></span></button>
+</div>
+<div class="gnav-drawer" id="gnav-drawer"><nav aria-label="サイト内メニュー"><a href="./index.html#rinen">理念</a><a href="./index.html#zentai">事業の全体像</a><a href="./index.html#group">Projects</a><a href="./index.html#daihyo">代表について</a><a href="./members.html" aria-current="page">メンバー紹介</a><a href="./index.html#gaiyo">会社概要</a><a href="./index.html#contact">お問い合わせ</a></nav></div>
 <main>
   <p class="eng">COMING SOON</p>
   <h1>メンバー紹介</h1>
   <p class="txt">このページは、準備中です。<br>公開の時期は、Metoriarchのサイトでお知らせします。</p>
   <a href="./index.html">Metoriarch トップへ戻る</a>
 </main>
+<script>
+(function(){
+  var g=document.getElementById('gnav'), d=document.getElementById('gnav-drawer');
+  if(!g||!d) return;
+  var btn=g.querySelector('.gnav-btn'), always=g.getAttribute('data-solid')==='1';
+  function solid(){ if(always||window.scrollY>40) g.classList.add('is-solid'); else g.classList.remove('is-solid'); }
+  function setOpen(o){
+    g.classList.toggle('is-open',o); d.classList.toggle('is-open',o);
+    document.body.classList.toggle('nav-lock',o);
+    btn.setAttribute('aria-expanded',o?'true':'false');
+    btn.setAttribute('aria-label',o?'メニューを閉じる':'メニューを開く');
+  }
+  btn.addEventListener('click',function(){ setOpen(!g.classList.contains('is-open')); });
+  d.addEventListener('click',function(e){ if(e.target.tagName==='A') setOpen(false); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') setOpen(false); });
+  window.addEventListener('scroll',solid,{passive:true}); solid();
+})();
+</script>
 </body>
 </html>
