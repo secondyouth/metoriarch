@@ -3,20 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#404283">
-<meta name="robots" content="noindex">
-<title>メンバー紹介｜Metoriarch</title>
+<meta name="theme-color" content="#23264a">
+<title>メンバー紹介｜株式会社Metoriarch</title>
+<meta name="description" content="株式会社Metoriarchのメンバー紹介。プロジェクトマネジメント、経理・総務、人事労務、デザイン・SNS運用の実務経験を持つメンバーが、バックオフィスを担当します。">
 <link rel="icon" href="./favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
 <link rel="apple-touch-icon" href="./apple-touch-icon.png">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:"Hiragino Sans","Yu Gothic",sans-serif;background:#F7F5EE;color:#2A2A3D;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;line-height:2;padding:24px;}
-.eng{font-family:Georgia,"Times New Roman",serif;font-size:12px;letter-spacing:.34em;text-indent:.34em;color:#756A38;}
-h1{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;font-size:clamp(22px,4.6vw,34px);letter-spacing:.06em;color:#404283;margin-top:18px;line-height:1.7;}
-.txt{margin-top:30px;font-size:14.5px;color:#5F5F70;}
-a{display:inline-block;margin-top:38px;padding:13px 34px;border:1px solid rgba(64,66,131,.5);color:#404283;text-decoration:none;font-size:13px;letter-spacing:.18em;text-indent:.18em;transition:background .3s,color .3s;}
-a:hover{background:#404283;color:#F7F5EE;}
+:root{ --navy:#3B3F72; --deep:#23264a; --gold:#C3BC91; --gold-ink:#756A38; --ink:#2a2a3d; --soft:#5F5F70;
+  --paper:#F7F5EE; --paper-2:#FDFCF7;
+  --mincho:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
+  --gothic:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic",sans-serif; }
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ -webkit-text-size-adjust:100%; }
+body{ background:var(--paper-2); color:var(--ink); font-family:var(--gothic); font-size:15.5px; line-height:2;
+  letter-spacing:.04em; -webkit-font-smoothing:antialiased; line-break:strict; overflow-wrap:break-word; overflow-x:hidden; }
+img{ max-width:100%; height:auto; display:block; }
+.w{ display:inline-block; }
+
+/* 冒頭 */
+.mhead{ position:relative; overflow:hidden; text-align:center; padding:clamp(96px,9vw,120px) 22px clamp(52px,6vw,72px);
+  background:linear-gradient(168deg,#4A4F90 0%,#3B3F72 46%,#23264A 100%); color:#F7F5EE; }
+.mhead .facet{ position:absolute; inset:0; pointer-events:none; }
+.mhead .k1{ background:linear-gradient(215deg,rgba(240,236,214,.34) 0%,rgba(240,236,214,.06) 100%); clip-path:polygon(100% 0,58% 0,100% 46%); }
+.mhead .k2{ background:linear-gradient(215deg,rgba(195,188,145,.20) 0%,rgba(195,188,145,.03) 100%); clip-path:polygon(100% 0,18% 0,100% 82%); }
+.mhead .k3{ background:linear-gradient(150deg,rgba(13,14,38,.0) 0%,rgba(13,14,38,.35) 100%); clip-path:polygon(0 70%,100% 92%,100% 100%,0 100%); }
+.mhead > *:not(.facet){ position:relative; }
+.mhead .en{ font-family:Georgia,"Times New Roman",serif; font-style:italic; font-size:13px; letter-spacing:.24em; color:#E5DDAF; }
+.mhead h1{ font-family:var(--mincho); font-weight:600; font-size:clamp(26px,4.4vw,38px); letter-spacing:.2em; text-indent:.2em; margin-top:14px; }
+.mhead p.lead{ margin-top:22px; font-size:14.5px; color:rgba(247,245,238,.82); letter-spacing:.08em; }
+
+/* 一覧（目次） */
+.mindex{ max-width:980px; margin:56px auto 0; padding:0; display:grid; grid-template-columns:repeat(4,auto); justify-content:center; border-top:1px solid rgba(195,188,145,.6); border-bottom:1px solid rgba(195,188,145,.6); }
+.mindex a{ text-decoration:none; color:var(--ink); text-align:center; padding:22px clamp(18px,3vw,40px); transition:background .4s ease; }
+.mindex a + a{ border-left:1px solid rgba(138,138,184,.22); }
+.mindex a:hover{ background:rgba(195,188,145,.12); }
+.mindex .nm{ font-family:var(--mincho); font-weight:600; font-size:16px; letter-spacing:.12em; color:var(--navy); }
+.mindex .rl{ font-size:11.5px; color:var(--gold-ink); letter-spacing:.06em; line-height:1.7; margin-top:2px; }
+
+/* 一人ずつ */
+.member{ max-width:1080px; margin:0 auto; padding:clamp(72px,9vw,120px) 22px 0; }
+.member + .member{ border-top:none; }
+.mrow{ display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:clamp(32px,6vw,80px); align-items:start; }
+.member:nth-of-type(even) .mrow{ grid-template-columns:minmax(0,7fr) minmax(0,4fr); }
+.member:nth-of-type(even) .mphoto{ margin-top:clamp(40px,6vw,96px); }
+.member:nth-of-type(even) .mphoto{ order:2; }
+.mphoto{ position:sticky; top:96px; }
+.mphoto .fr{ position:relative; }
+.mphoto img{ width:100%; aspect-ratio:4/5; object-fit:cover; box-shadow:0 1px 1px rgba(59,63,114,.03), 0 32px 64px -40px rgba(59,63,114,.22); }
+.mtext .role{ font-size:13px; letter-spacing:.08em; color:var(--soft); margin-top:10px; }
+.mtext h2{ font-family:var(--mincho); font-weight:600; font-size:clamp(26px,3.4vw,34px); letter-spacing:.16em; color:var(--navy); line-height:1.5; margin-top:0; }
+.mtext .en{ font-family:Georgia,"Times New Roman",serif; font-style:italic; font-size:13px; letter-spacing:.26em; color:#8a8a96; margin-top:4px; }
+.mtext .catch{ font-family:var(--mincho); font-weight:600; font-size:clamp(20px,2.4vw,24px); line-height:1.8; letter-spacing:.06em; color:var(--ink);
+  margin:28px 0 28px; padding:0 0 24px; border-bottom:1px solid rgba(195,188,145,.6); }
+.mtext p.b{ font-size:15px; line-height:2.05; margin-bottom:1.15em; color:#3a3a4d; }
+.mtext .lh{ font-family:var(--mincho); font-weight:600; font-size:15px; letter-spacing:.14em; color:var(--navy); margin:36px 0 6px; }
+.mtext ul{ list-style:none; border-top:1px solid rgba(138,138,184,.28); }
+.mtext li{ position:relative; padding:12px 0 12px 1.6em; border-bottom:1px solid rgba(138,138,184,.22); font-size:14px; line-height:1.85; color:#3a3a4d; }
+.mtext li::before{ content:""; position:absolute; left:0; top:1.45em; width:10px; height:0; border-top:1px solid var(--gold); }
+
+/* 終わり */
+.mfoot{ text-align:center; padding:clamp(88px,10vw,128px) 22px 0; }
+.mfoot a.back{ display:inline-block; color:var(--navy); text-decoration:none; font-size:14px; letter-spacing:.12em; padding:10px 4px; border-bottom:1px solid var(--gold); transition:border-color .4s ease; }
+.mfoot a.back:hover{ border-bottom-color:var(--navy); }
+footer.site{ margin-top:88px; background:#1C1F3D; color:rgba(247,245,238,.6); text-align:center; padding:40px 22px; font-size:12px; letter-spacing:.1em; }
+
+/* 出てくる動き（JSが無ければ最初から全部見える） */
+.js .rv{ opacity:0; transform:translateY(20px); transition:opacity .9s ease, transform .9s ease; }
+.js .rv.in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce){ .js .rv{ opacity:1; transform:none; transition:none; } }
+
+@media (max-width:820px){
+  .mindex{ grid-template-columns:repeat(2,1fr); margin:40px 22px 0; }
+  .mindex a{ padding:18px 10px; }
+  .mindex a:nth-child(3){ border-left:none; }
+  .mindex a:nth-child(n+3){ border-top:1px solid rgba(138,138,184,.22); }
+  .mindex .rl{ font-size:11px; letter-spacing:.02em; }
+  .member:nth-of-type(even) .mphoto{ margin-top:0; }
+  .mrow, .member:nth-of-type(even) .mrow{ grid-template-columns:1fr; gap:34px; }
+  .member:nth-of-type(even) .mphoto{ order:0; }
+  .mphoto{ position:static; max-width:420px; margin:0 auto; width:86%; }
+  .mtext{ text-align:left; }
+  .mtext h2{ letter-spacing:.1em; }
+  .mtext .catch{ margin:24px 0 22px; padding:0 0 18px; font-size:18px; line-height:1.75; letter-spacing:.02em; }
+  .mtext p.b{ font-size:14.5px; }
+}
 
 /* ===== ヘッダー（共通） ===== */
 .gnav{ position:fixed; top:0; left:0; right:0; z-index:9000; height:64px;
@@ -68,19 +139,86 @@ html{ scroll-padding-top:68px; }
 }
 </style>
 </head>
-<body class="gnav-pad">
-<div class="gnav is-solid" id="gnav" role="banner" data-solid="1">
+<body>
+<div class="gnav" id="gnav" role="banner">
   <a class="gnav-logo" href="./index.html" aria-label="株式会社Metoriarch トップへ"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAsCAYAAAAq/ZsdAAADdUlEQVR42tWZPagcVRiGn7N3xUSDSmKjaNIo4k8jIsEq+E9UEEXj1RRaRBsLSUAb0wQhWmilooU/YBTCLRRBBJEg6kVtLBJIEeEiFkqCohBQo3fvPBaeA5/D3bg/M/tzmh3m7Mz5nj3nfec9s6ivqQsA5XOeWqg9qa/gv+1j9aLc0Z1DmAvUD1VR/8pQx9Wr5gWq1KheoR7NDD3UnrqaT/ys3jrrUAFmh3oy175aZqhX6MLnnjKlapohkBSW2aPq37Xa/wOkuqZW+fhguFFnBmA65cdVD+Qaq1yz/YDKl8q5w+rGaTtgmJVz1UNhVqpa7esCGdek+rV62bR0FfRyifplrTaHAYoX/qDeOGmoAHO9uvJ/MIMARcH9rj4wCbPI4i8w96qnB4EZFMia8J4Jg3ZaEn8nH+/tU8PYQHVHeT0MutBSjHl5HedtFKhAlWn/RN3clK7CErtQ/SgssWqI+oYGqpvFcfXqcaECzJXqsUH10iRQHPAX9fZRoQLMzeqpcWDGBarHpceHccBajHlsvRgzDaC6aF8YJC7FPvW5fjFmWkD1uLSkntfPAcOsbFDfO1uMmSZQXVffqJevMxtFL5eqy+PqZRJA/eJSJ8DcoH7fBoxZmD2g6SS9CpwDVMB1wImUUqXeB7wDbALWWhiXNvY5axlmDdgLrGSYfcD7GaZqA6as6zY09Jt6Txjj1VFizCitya1AD+gC3wG7UkpH1S3AIWBn7l8AWt3SdxuG+Qx4JKV0MkeipayhXoNjtaohs1a6wNvAzgxzG/D5pGHG1VB8qu8P99sTtNRzwm1UoHLNn+ruAHOwyRgzKVMoS+hHYDGltKyeD7wBLOYl2GnpkdC4KRSYb4GHUkor6lbgMHDTxPUyhikYiv0AuCXDbAe+mBWYQYGqDNQFXkop3Z9SOp3fAB0BtgWnm4n3xb0BxF+pT4Zrnh72bcwsuFyx3l/Vu0v8z3+QTSTGNOlyRQ8ncow5pl4MvAvcOakY05TLFZgjwO6U0in1mhxjrp0V8Q9iCjHGvAXclWHuyDFm5mGiKURhPxv6nphmjBnVFM7k4z/UhwPM89OOMaNuwQV+Ah5MKX2lbgLeBHaFGJOYk9YBloEdGWYb8GmGmVknO1tL6oaU0pkcY5aArXMh/n5AWS+L2dk25qjTYU5bUp8CXgy2vZCP57L9AwOsY7KSvg52AAAAAElFTkSuQmCC" alt="" width="26" height="22"></a>
   <nav class="gnav-list" aria-label="サイト内メニュー"><a href="./index.html#rinen">理念</a><a href="./index.html#zentai">事業の全体像</a><a href="./index.html#group">Projects</a><a href="./index.html#daihyo">代表について</a><a href="./members.html" aria-current="page">メンバー紹介</a><a href="./index.html#gaiyo">会社概要</a><a href="./index.html#contact">お問い合わせ</a></nav>
   <button class="gnav-btn" type="button" aria-expanded="false" aria-controls="gnav-drawer" aria-label="メニューを開く"><span></span><span></span><span></span></button>
 </div>
 <div class="gnav-drawer" id="gnav-drawer"><nav aria-label="サイト内メニュー"><a href="./index.html#rinen">理念</a><a href="./index.html#zentai">事業の全体像</a><a href="./index.html#group">Projects</a><a href="./index.html#daihyo">代表について</a><a href="./members.html" aria-current="page">メンバー紹介</a><a href="./index.html#gaiyo">会社概要</a><a href="./index.html#contact">お問い合わせ</a></nav></div>
-<main>
-  <p class="eng">COMING SOON</p>
+<header class="mhead">
+  <div class="facet k1" aria-hidden="true"></div><div class="facet k2" aria-hidden="true"></div><div class="facet k3" aria-hidden="true"></div>
   <h1>メンバー紹介</h1>
-  <p class="txt">このページは、準備中です。<br>公開の時期は、Metoriarchのサイトでお知らせします。</p>
-  <a href="./index.html">Metoriarch トップへ戻る</a>
-</main>
+</header>
+<nav class="mindex" aria-label="メンバー一覧"><a href="#saji"><p class="nm">佐治 由佳</p><p class="rl"><span class="w">プロジェクトマネジメント・</span><span class="w">業務改善</span></p></a><a href="#takikawa"><p class="nm">滝川 未沙子</p><p class="rl"><span class="w">経理・</span><span class="w">総務・</span><span class="w">業務改善</span></p></a><a href="#kunai"><p class="nm">久内 奈津美</p><p class="rl"><span class="w">人事労務・</span><span class="w">業務改善</span></p></a><a href="#hiraiwa"><p class="nm">平岩 杏奈</p><p class="rl"><span class="w">デザイン・</span><span class="w">SNS運用・</span><span class="w">バックオフィス</span></p></a></nav>
+<section class="member" id="saji">
+  <div class="mrow">
+    <div class="mphoto rv"><div class="fr"><img src="./members/saji.jpg" alt="佐治 由佳" width="800" height="1000" loading="lazy"></div></div>
+    <div class="mtext rv">
+      <h2>佐治 由佳</h2>
+      <p class="en">SAJI YUKA</p>
+      <p class="role">プロジェクトマネジメント・業務改善</p>
+      <p class="catch"><span class="w">大手企業で16年。</span><span class="w">組織づくりから</span><span class="w">業務改善の定着までを推進。</span></p>
+      <p class="b">大手人材サービス会社に16年間在籍し、組織マネジメントや業務改善に従事。新規部署の立ち上げでは、業務の仕組みや組織体制をゼロから構築してきました。</p><p class="b">事業部の業務改善プロジェクトでは、情報管理システムの見直しから、新しい業務フローの導入・現場への定着までを推進。計画を立てるだけでなく、実際に機能する仕組みへと整えることを得意としています。</p><p class="b">バックオフィス業務をお預かりする際には、まず全体を見渡して課題を整理し、優先順位やスケジュールを明確にします。進捗状況を共有しながら、計画から実行までを着実に進め、安心して任せられる体制づくりを支援しています。</p><p class="b">現在はAIを活用した業務アプリの開発や、企業向けAI研修にも従事。クラウドサービスやAIの導入においても、導入自体を目的とせず、現場で継続的に活用できる仕組みづくりを重視しています。</p>
+      <p class="lh">経歴・実績</p>
+      <ul><li>大手人材サービス会社に16年間在籍し、組織マネジメントを担当</li><li>新規部署の立ち上げ（業務フロー・組織体制をゼロから構築）</li><li>事業部の業務改善プロジェクトを推進（情報管理システムの見直し・現場への定着）</li><li>AIを活用した業務アプリの開発、企業向けAI研修の講師</li></ul>
+    </div>
+  </div>
+</section>
+<section class="member" id="takikawa">
+  <div class="mrow">
+    <div class="mphoto rv"><div class="fr"><img src="./members/takikawa.jpg" alt="滝川 未沙子" width="800" height="1000" loading="lazy"></div></div>
+    <div class="mtext rv">
+      <h2>滝川 未沙子</h2>
+      <p class="en">TAKIKAWA MISAKO</p>
+      <p class="role">経理・総務・業務改善</p>
+      <p class="catch"><span class="w">担当者もルールもない経理を、</span><span class="w">毎月きちんと回る仕組みへ。</span></p>
+      <p class="b">約7年間の経理実務経験を持ち、主に起業家やフリーランスなど、経理担当者や業務ルールが整っていない事業者の経理を数多く支援してきました。</p><p class="b">領収書や入出金資料が整理されていない状態からでも、書類の管理方法や記帳のルールを整備。毎月決まったスケジュールで月次処理を完了できる仕組みをつくり、税理士への資料提出までを見据えた経理体制を構築します。</p><p class="b">前職の営業事務では、社内の業務改善コンペで提案が採用・表彰された実績もあります。日々の業務を正確に進めるだけでなく、業務そのものを見直し、効率的な仕組みに変えることを得意としています。</p><p class="b">現在はRPAやAIを活用した経理・事務業務の自動化にも取り組み、手作業の削減と業務効率化を支援しています。</p>
+      <p class="lh">経歴・資格</p>
+      <ul><li>経理実務 約7年（起業家・フリーランスの経理を中心に、記帳から月次処理まで）</li><li>日商簿記検定2級</li><li>RPA・AIを活用した経理・事務業務の自動化</li><li>前職の営業事務において、社内業務改善コンペで提案が採用・表彰</li></ul>
+    </div>
+  </div>
+</section>
+<section class="member" id="kunai">
+  <div class="mrow">
+    <div class="mphoto rv"><div class="fr"><img src="./members/kunai.jpg" alt="久内 奈津美" width="800" height="1000" loading="lazy"></div></div>
+    <div class="mtext rv">
+      <h2>久内 奈津美</h2>
+      <p class="en">KUNAI NATSUMI</p>
+      <p class="role">人事労務・業務改善</p>
+      <p class="catch"><span class="w">約11年の人事労務経験を活かし、</span><span class="w">属人化した業務を仕組みから改善。</span></p>
+      <p class="b">約11年間にわたり、従業員約1,000名規模と約200名規模の企業で、人事労務業務に従事。給与計算・勤怠管理・年末調整など、正確性が求められる実務を幅広く担当してきました。</p><p class="b">特に得意とするのは、特定の担当者しか把握していない業務を整理し、誰が担当しても正確に進められる仕組みをつくることです。手順書のない給与計算業務でも、現状の運用を丁寧に把握し、業務フローやチェック体制を整備します。</p><p class="b">また、社内規程と実際の運用の違いを見直し、通勤手当の規程整備や短時間勤務制度の拡充など、現場の実態に合わせた制度改善にも携わってきました。</p><p class="b">就業規則や法令との整合性にも目を配り、改善が必要な点を積極的に提案。専門的な判断が必要な場合には、課題を整理したうえで社会保険労務士へつなぎ、適切な対応を支援しています。</p>
+      <p class="lh">経歴・資格</p>
+      <ul><li>人事労務実務 約11年（従業員約1,000名・約200名規模の企業2社で、給与計算・勤怠管理・規程改定などを担当）</li><li>新卒・中途採用業務 約10年</li><li>社員教育・研修の企画・運営</li><li>国家資格キャリアコンサルタント</li></ul>
+    </div>
+  </div>
+</section>
+<section class="member" id="hiraiwa">
+  <div class="mrow">
+    <div class="mphoto rv"><div class="fr"><img src="./members/hiraiwa.jpg" alt="平岩 杏奈" width="800" height="1000" loading="lazy"></div></div>
+    <div class="mtext rv">
+      <h2>平岩 杏奈</h2>
+      <p class="en">HIRAIWA ANNA</p>
+      <p class="role">デザイン・SNS運用・バックオフィス</p>
+      <p class="catch"><span class="w">相手の想いをくみ取り、</span><span class="w">デザイン・SNS運用から</span><span class="w">業務支援まで。</span></p>
+      <p class="b">総合病院で約10年にわたり看護の現場に携わり、小児科・内科混合病棟や外来で患者とその家族を支えてきました。抗がん剤治療を受ける子どもたちに寄り添い、絵や遊びを通じて笑顔を引き出すなど、一人ひとりの気持ちをくみ取ることを大切にしてきました。</p><p class="b">退職後は、自身も体調と向き合いながら、日々の気づきやイラストをSNSで発信。同じ悩みを持つ方々から「救われた」という声が届くようになりました。</p><p class="b">育児の傍ら独学でデザインを学び、約4年間SNSマーケティングに従事。クリエイティブ制作からアカウント運用、インサイト分析に基づく改善まで、幅広く担当してきました。</p><p class="b">現在は当社にて、データ管理や資料作成などのバックオフィス業務を担当し、他社からの業務も受託しています。看護の現場で培った「気づく力」と、デザインやSNS運用を通じて培った「伝わる形にする力」を活かし、さまざまな事情を抱えていても、自分らしく働き続けられる女性を増やすことを目指しています。</p>
+      <p class="lh">経歴・実績</p>
+      <ul><li>総合病院での看護業務 約10年（小児科・内科混合病棟、外来）</li><li>SNSでの気づきやイラストの発信</li><li>SNSマーケティング 約4年（クリエイティブ制作・アカウント運用・インサイト分析による改善）</li><li>当社および他社からの受託によるバックオフィス業務</li></ul>
+    </div>
+  </div>
+</section>
+<div class="mfoot"><a class="back" href="./index.html">トップページへ戻る</a></div>
+<footer class="site">© 株式会社Metoriarch</footer>
+<script>
+(function(){
+  try{ if(!('IntersectionObserver' in window)) return; if(matchMedia('(prefers-reduced-motion: reduce)').matches) return; }catch(e){ return; }
+  document.documentElement.classList.add('js');
+  var t=[].slice.call(document.querySelectorAll('.rv'));
+  var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); },{rootMargin:'0px 0px -8% 0px'});
+  t.forEach(function(el){ io.observe(el); });
+  setTimeout(function(){ t.forEach(function(el){ el.classList.add('in'); }); }, 12000);
+})();
+</script>
 <script>
 (function(){
   var g=document.getElementById('gnav'), d=document.getElementById('gnav-drawer');
