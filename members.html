@@ -13,7 +13,7 @@
 :root{ --navy:#3B3F72; --deep:#23264a; --gold:#C3BC91; --gold-ink:#756A38; --ink:#2a2a3d; --soft:#5F5F70;
   --paper:#F7F5EE; --paper-2:#FDFCF7;
   --mincho:"Hiragino Mincho ProN","Yu Mincho","YuMincho",serif;
-  --gothic:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","YuGothic",sans-serif; }
+  --gothic:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic Medium","YuGothic","Yu Gothic",sans-serif; }
 *{ box-sizing:border-box; margin:0; padding:0; }
 html{ -webkit-text-size-adjust:100%; }
 body{ background:var(--paper-2); color:var(--ink); font-family:var(--gothic); font-size:15.5px; line-height:2;
@@ -34,11 +34,11 @@ img{ max-width:100%; height:auto; display:block; }
 .mhead p.lead{ margin-top:22px; font-size:14.5px; color:rgba(247,245,238,.82); letter-spacing:.08em; }
 
 /* 一覧（目次） */
-.mindex{ max-width:980px; margin:56px auto 0; padding:0; display:grid; grid-template-columns:repeat(4,auto); justify-content:center; border-top:1px solid rgba(195,188,145,.6); border-bottom:1px solid rgba(195,188,145,.6); }
-.mindex a{ text-decoration:none; color:var(--ink); text-align:center; padding:22px clamp(18px,3vw,40px); transition:background .4s ease; }
+.mindex{ max-width:980px; margin:56px auto 0; padding:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border-top:1px solid rgba(195,188,145,.6); border-bottom:1px solid rgba(195,188,145,.6); }
+.mindex a{ text-decoration:none; color:var(--ink); text-align:center; padding:22px clamp(12px,2vw,28px); transition:background .4s ease; }
 .mindex a + a{ border-left:1px solid rgba(138,138,184,.22); }
 .mindex a:hover{ background:rgba(195,188,145,.12); }
-.mindex .nm{ font-family:var(--mincho); font-weight:600; font-size:16px; letter-spacing:.12em; color:var(--navy); }
+.mindex .nm{ font-family:Georgia,"Times New Roman",serif; font-size:15px; letter-spacing:.12em; color:var(--navy); white-space:nowrap; }
 .mindex .rl{ font-size:11.5px; color:var(--gold-ink); letter-spacing:.06em; line-height:1.7; margin-top:2px; }
 
 /* 一人ずつ */
@@ -51,15 +51,15 @@ img{ max-width:100%; height:auto; display:block; }
 .mphoto{ position:sticky; top:96px; }
 .mphoto .fr{ position:relative; }
 .mphoto img{ width:100%; aspect-ratio:4/5; object-fit:cover; box-shadow:0 1px 1px rgba(59,63,114,.03), 0 32px 64px -40px rgba(59,63,114,.22); }
-.mtext .role{ font-size:13px; letter-spacing:.08em; color:var(--soft); margin-top:10px; }
-.mtext h2{ font-family:var(--mincho); font-weight:600; font-size:clamp(26px,3.4vw,34px); letter-spacing:.16em; color:var(--navy); line-height:1.5; margin-top:0; }
+.mtext .role{ font-size:13px; letter-spacing:.08em; color:#4a4a5c; margin-top:12px; }
+.mtext h2{ font-family:Georgia,"Times New Roman",serif; font-weight:400; font-size:clamp(26px,3.2vw,32px); letter-spacing:.14em; color:var(--navy); line-height:1.4; margin-top:0; }
 .mtext .en{ font-family:Georgia,"Times New Roman",serif; font-style:italic; font-size:13px; letter-spacing:.26em; color:#8a8a96; margin-top:4px; }
 .mtext .catch{ font-family:var(--mincho); font-weight:600; font-size:clamp(20px,2.4vw,24px); line-height:1.8; letter-spacing:.06em; color:var(--ink);
   margin:28px 0 28px; padding:0 0 24px; border-bottom:1px solid rgba(195,188,145,.6); }
-.mtext p.b{ font-size:15px; line-height:2.05; margin-bottom:1.15em; color:#3a3a4d; }
+.mtext p.b{ font-size:15px; line-height:2.05; margin-bottom:1.15em; color:#22223a; font-weight:500; }
 .mtext .lh{ font-family:var(--mincho); font-weight:600; font-size:15px; letter-spacing:.14em; color:var(--navy); margin:36px 0 6px; }
 .mtext ul{ list-style:none; border-top:1px solid rgba(138,138,184,.28); }
-.mtext li{ position:relative; padding:12px 0 12px 1.6em; border-bottom:1px solid rgba(138,138,184,.22); font-size:14px; line-height:1.85; color:#3a3a4d; }
+.mtext li{ position:relative; padding:12px 0 12px 1.6em; border-bottom:1px solid rgba(138,138,184,.22); font-size:14px; line-height:1.85; color:#22223a; font-weight:500; }
 .mtext li::before{ content:""; position:absolute; left:0; top:1.45em; width:10px; height:0; border-top:1px solid var(--gold); }
 
 /* 終わり */
@@ -79,12 +79,13 @@ footer.site{ margin-top:88px; background:#1C1F3D; color:rgba(247,245,238,.6); te
   .mindex a:nth-child(3){ border-left:none; }
   .mindex a:nth-child(n+3){ border-top:1px solid rgba(138,138,184,.22); }
   .mindex .rl{ font-size:11px; letter-spacing:.02em; }
+  .mindex .nm{ font-size:13px; letter-spacing:.08em; white-space:nowrap; }
   .member:nth-of-type(even) .mphoto{ margin-top:0; }
   .mrow, .member:nth-of-type(even) .mrow{ grid-template-columns:1fr; gap:34px; }
   .member:nth-of-type(even) .mphoto{ order:0; }
   .mphoto{ position:static; max-width:420px; margin:0 auto; width:86%; }
   .mtext{ text-align:left; }
-  .mtext h2{ letter-spacing:.1em; }
+  .mtext h2{ letter-spacing:.08em; font-size:25px; }
   .mtext .catch{ margin:24px 0 22px; padding:0 0 18px; font-size:18px; line-height:1.75; letter-spacing:.02em; }
   .mtext p.b{ font-size:14.5px; }
 }
@@ -150,13 +151,12 @@ html{ scroll-padding-top:68px; }
   <div class="facet k1" aria-hidden="true"></div><div class="facet k2" aria-hidden="true"></div><div class="facet k3" aria-hidden="true"></div>
   <h1>メンバー紹介</h1>
 </header>
-<nav class="mindex" aria-label="メンバー一覧"><a href="#saji"><p class="nm">佐治 由佳</p><p class="rl"><span class="w">プロジェクトマネジメント・</span><span class="w">業務改善</span></p></a><a href="#takikawa"><p class="nm">滝川 未沙子</p><p class="rl"><span class="w">経理・</span><span class="w">総務・</span><span class="w">業務改善</span></p></a><a href="#kunai"><p class="nm">久内 奈津美</p><p class="rl"><span class="w">人事労務・</span><span class="w">業務改善</span></p></a><a href="#hiraiwa"><p class="nm">平岩 杏奈</p><p class="rl"><span class="w">デザイン・</span><span class="w">SNS運用・</span><span class="w">バックオフィス</span></p></a></nav>
+<nav class="mindex" aria-label="メンバー一覧"><a href="#saji"><p class="nm">SAJI YUKA</p><p class="rl"><span class="w">プロジェクトマネジメント・</span><span class="w">業務改善</span></p></a><a href="#takikawa"><p class="nm">TAKIKAWA MISAKO</p><p class="rl"><span class="w">経理・</span><span class="w">総務・</span><span class="w">業務改善</span></p></a><a href="#kunai"><p class="nm">KUNAI NATSUMI</p><p class="rl"><span class="w">人事労務・</span><span class="w">業務改善</span></p></a><a href="#hiraiwa"><p class="nm">HIRAIWA ANNA</p><p class="rl"><span class="w">デザイン・</span><span class="w">SNS運用・</span><span class="w">バックオフィス</span></p></a></nav>
 <section class="member" id="saji">
   <div class="mrow">
-    <div class="mphoto rv"><div class="fr"><img src="./members/saji.jpg" alt="佐治 由佳" width="800" height="1000" loading="lazy"></div></div>
+    <div class="mphoto rv"><div class="fr"><img src="./members/saji.jpg" alt="SAJI YUKA" width="800" height="1000" loading="lazy"></div></div>
     <div class="mtext rv">
-      <h2>佐治 由佳</h2>
-      <p class="en">SAJI YUKA</p>
+      <h2>SAJI YUKA</h2>
       <p class="role">プロジェクトマネジメント・業務改善</p>
       <p class="catch"><span class="w">大手企業で16年。</span><span class="w">組織づくりから</span><span class="w">業務改善の定着までを推進。</span></p>
       <p class="b">大手人材サービス会社に16年間在籍し、組織マネジメントや業務改善に従事。新規部署の立ち上げでは、業務の仕組みや組織体制をゼロから構築してきました。</p><p class="b">事業部の業務改善プロジェクトでは、情報管理システムの見直しから、新しい業務フローの導入・現場への定着までを推進。計画を立てるだけでなく、実際に機能する仕組みへと整えることを得意としています。</p><p class="b">バックオフィス業務をお預かりする際には、まず全体を見渡して課題を整理し、優先順位やスケジュールを明確にします。進捗状況を共有しながら、計画から実行までを着実に進め、安心して任せられる体制づくりを支援しています。</p><p class="b">現在はAIを活用した業務アプリの開発や、企業向けAI研修にも従事。クラウドサービスやAIの導入においても、導入自体を目的とせず、現場で継続的に活用できる仕組みづくりを重視しています。</p>
@@ -167,10 +167,9 @@ html{ scroll-padding-top:68px; }
 </section>
 <section class="member" id="takikawa">
   <div class="mrow">
-    <div class="mphoto rv"><div class="fr"><img src="./members/takikawa.jpg" alt="滝川 未沙子" width="800" height="1000" loading="lazy"></div></div>
+    <div class="mphoto rv"><div class="fr"><img src="./members/takikawa.jpg" alt="TAKIKAWA MISAKO" width="800" height="1000" loading="lazy"></div></div>
     <div class="mtext rv">
-      <h2>滝川 未沙子</h2>
-      <p class="en">TAKIKAWA MISAKO</p>
+      <h2>TAKIKAWA MISAKO</h2>
       <p class="role">経理・総務・業務改善</p>
       <p class="catch"><span class="w">担当者もルールもない経理を、</span><span class="w">毎月きちんと回る仕組みへ。</span></p>
       <p class="b">約7年間の経理実務経験を持ち、主に起業家やフリーランスなど、経理担当者や業務ルールが整っていない事業者の経理を数多く支援してきました。</p><p class="b">領収書や入出金資料が整理されていない状態からでも、書類の管理方法や記帳のルールを整備。毎月決まったスケジュールで月次処理を完了できる仕組みをつくり、税理士への資料提出までを見据えた経理体制を構築します。</p><p class="b">前職の営業事務では、社内の業務改善コンペで提案が採用・表彰された実績もあります。日々の業務を正確に進めるだけでなく、業務そのものを見直し、効率的な仕組みに変えることを得意としています。</p><p class="b">現在はRPAやAIを活用した経理・事務業務の自動化にも取り組み、手作業の削減と業務効率化を支援しています。</p>
@@ -181,10 +180,9 @@ html{ scroll-padding-top:68px; }
 </section>
 <section class="member" id="kunai">
   <div class="mrow">
-    <div class="mphoto rv"><div class="fr"><img src="./members/kunai.jpg" alt="久内 奈津美" width="800" height="1000" loading="lazy"></div></div>
+    <div class="mphoto rv"><div class="fr"><img src="./members/kunai.jpg" alt="KUNAI NATSUMI" width="800" height="1000" loading="lazy"></div></div>
     <div class="mtext rv">
-      <h2>久内 奈津美</h2>
-      <p class="en">KUNAI NATSUMI</p>
+      <h2>KUNAI NATSUMI</h2>
       <p class="role">人事労務・業務改善</p>
       <p class="catch"><span class="w">約11年の人事労務経験を活かし、</span><span class="w">属人化した業務を仕組みから改善。</span></p>
       <p class="b">約11年間にわたり、従業員約1,000名規模と約200名規模の企業で、人事労務業務に従事。給与計算・勤怠管理・年末調整など、正確性が求められる実務を幅広く担当してきました。</p><p class="b">特に得意とするのは、特定の担当者しか把握していない業務を整理し、誰が担当しても正確に進められる仕組みをつくることです。手順書のない給与計算業務でも、現状の運用を丁寧に把握し、業務フローやチェック体制を整備します。</p><p class="b">また、社内規程と実際の運用の違いを見直し、通勤手当の規程整備や短時間勤務制度の拡充など、現場の実態に合わせた制度改善にも携わってきました。</p><p class="b">就業規則や法令との整合性にも目を配り、改善が必要な点を積極的に提案。専門的な判断が必要な場合には、課題を整理したうえで社会保険労務士へつなぎ、適切な対応を支援しています。</p>
@@ -195,10 +193,9 @@ html{ scroll-padding-top:68px; }
 </section>
 <section class="member" id="hiraiwa">
   <div class="mrow">
-    <div class="mphoto rv"><div class="fr"><img src="./members/hiraiwa.jpg" alt="平岩 杏奈" width="800" height="1000" loading="lazy"></div></div>
+    <div class="mphoto rv"><div class="fr"><img src="./members/hiraiwa.jpg" alt="HIRAIWA ANNA" width="800" height="1000" loading="lazy"></div></div>
     <div class="mtext rv">
-      <h2>平岩 杏奈</h2>
-      <p class="en">HIRAIWA ANNA</p>
+      <h2>HIRAIWA ANNA</h2>
       <p class="role">デザイン・SNS運用・バックオフィス</p>
       <p class="catch"><span class="w">相手の想いをくみ取り、</span><span class="w">デザイン・SNS運用から</span><span class="w">業務支援まで。</span></p>
       <p class="b">総合病院で約10年にわたり看護の現場に携わり、小児科・内科混合病棟や外来で患者とその家族を支えてきました。抗がん剤治療を受ける子どもたちに寄り添い、絵や遊びを通じて笑顔を引き出すなど、一人ひとりの気持ちをくみ取ることを大切にしてきました。</p><p class="b">退職後は、自身も体調と向き合いながら、日々の気づきやイラストをSNSで発信。同じ悩みを持つ方々から「救われた」という声が届くようになりました。</p><p class="b">育児の傍ら独学でデザインを学び、約4年間SNSマーケティングに従事。クリエイティブ制作からアカウント運用、インサイト分析に基づく改善まで、幅広く担当してきました。</p><p class="b">現在は当社にて、データ管理や資料作成などのバックオフィス業務を担当し、他社からの業務も受託しています。看護の現場で培った「気づく力」と、デザインやSNS運用を通じて培った「伝わる形にする力」を活かし、さまざまな事情を抱えていても、自分らしく働き続けられる女性を増やすことを目指しています。</p>
