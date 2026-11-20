@@ -348,6 +348,9 @@ table.gaiyo td ul li::before{ content:""; position:absolute; left:0; top:.95em; 
 .contact button:hover{ background-size:100% 100%; color:#23264A; }
 .contact button:active{ transform:translateY(1px); }
 .contact button:focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
+.contact label.agree{ display:flex; gap:10px; align-items:center; justify-content:center; margin:34px 0 0; font-size:13.5px; letter-spacing:.06em; color:var(--ink-soft); cursor:pointer; }
+.contact label.agree input{ width:18px; height:18px; padding:0; margin:0; flex:none; border:0; background:none; -webkit-appearance:auto; appearance:auto; accent-color:var(--shikon); }
+.contact label.agree a{ color:var(--ink); }
 .contact .after{ text-align:center; font-size:12.5px; color:var(--ink-faint); margin-top:18px; }
 .contact .done-msg{ display:none; text-align:center; padding:60px 20px; border:1px solid rgba(156,143,85,.45); }
 .contact.is-sent form, .contact.is-sent .after{ display:none; }
@@ -996,6 +999,7 @@ html{ scroll-padding-top:68px; }
         <input type="email" name="email" required>
         <label>ご相談の内容<span class="req">必須</span></label>
         <textarea name="ご相談の内容" required></textarea>
+        <label class="agree"><input type="checkbox" name="プライバシーポリシーへの同意" value="同意する" required><span><a href="./privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意のうえ送信します</span></label>
         <button type="submit">送信する</button>
       </form>
       <p class="after">確認しだい、メールでご返信します。</p>

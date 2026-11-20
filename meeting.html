@@ -97,7 +97,10 @@
   .f-row input:focus, .f-row select:focus, .f-row textarea:focus{
     outline:none; border-bottom-color:var(--gold);
   }
-  .submit-wrap{ text-align:center; margin-top:56px; }
+  .agree{ display:flex; gap:10px; align-items:center; justify-content:center; margin-top:44px; font-size:13.5px; color:var(--navy); letter-spacing:.04em; cursor:pointer; }
+  .agree input{ width:18px; height:18px; margin:0; flex:none; accent-color:var(--navy); }
+  .agree a{ color:var(--navy); }
+  .submit-wrap{ text-align:center; margin-top:32px; }
   .cta{
     display:inline-block; border:1px solid var(--gold); background:transparent;
     color:var(--navy); padding:22px 60px; font-size:13px; letter-spacing:.22em;
@@ -204,6 +207,8 @@
         <label>御社の体制について、ひとこと<span class="opt">任意</span></label>
         <textarea name="note"></textarea>
       </div>
+
+      <label class="agree"><input type="checkbox" name="agree" value="同意する" required><span><a href="./privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意のうえ送信します</span></label>
 
       <div class="submit-wrap">
         <button class="cta" type="submit">面談を申請する</button>
