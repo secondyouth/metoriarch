@@ -399,6 +399,16 @@ footer.site a{ text-decoration:none; margin-left:20px; }
 .strs .str .ill{ padding:10px 10px 0; }
 .strs .str .ill img{ aspect-ratio:auto; object-fit:contain; }
 
+
+/* ===== お問い合わせフォーム（ご相談の段・紺の上の白いカード） ===== */
+.cform{ margin-top:44px; color:var(--ink); }
+.cform .cf-t{ font-family:var(--serif); font-weight:700; font-size:24px; color:var(--navy); }
+.cform .cf-d{ margin-top:12px; font-size:15.5px; }
+.cform .cf-side ul.ck{ margin-top:16px; }
+.dl-form textarea{ font:inherit; font-size:16px; padding:13px 15px; border:1.5px solid #c9c3b5; background:#fff; color:var(--ink); border-radius:8px; width:100%; resize:vertical; line-height:1.8; }
+.dl-form textarea:focus{ outline:2px solid var(--navy); outline-offset:1px; border-color:var(--navy); }
+.corp dd a{ color:#fff; }
+
 /* 出てくる動き（JSが無ければ最初から全部見える） */
 .js .rv{ opacity:0; transform:translateY(18px); transition:opacity .8s ease, transform .8s ease; }
 .js .rv.in{ opacity:1; transform:none; }
@@ -530,8 +540,7 @@ html{ scroll-padding-top:68px; }
         <h1><img class="hw" src="./lp/hw-yesno.png" alt="社長は、Yes／Noを決めるだけ" width="1400" height="173"></h1>
         <p class="for"><span class="mk"><span class="w">グループ会社の管理を、</span></span><br><span class="mk"><span class="w">今の業務を止めずに</span><span class="w">約1か月で引き取ります。</span></span></p>
         <p class="lead"><span class="w">経理・労務・人事を、</span><span class="w">実務から判断の下準備まで</span><span class="w">引き受ける、</span><span class="w">外部の管理本部です。</span><br><span class="w">実務と、整える推進を、</span><span class="w">1社で。</span></p>
-        <div class="cta"><div class="cta-wrap"><span class="tag">社内検討用・15ページ</span><a class="btn btn--gold" href="#download">資料を受け取る<span class="ar" aria-hidden="true"></span></a></div><div class="cta-wrap"><a class="btn btn--ghost" href="mailto:info@metoriarch.com?subject=%E5%A4%96%E9%83%A8%E3%81%AE%E7%AE%A1%E7%90%86%E6%9C%AC%E9%83%A8%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">メールで30分の相談を申し込む</a></div></div>
-        <p class="mailline">メール：<a href="mailto:info@metoriarch.com?subject=%E5%A4%96%E9%83%A8%E3%81%AE%E7%AE%A1%E7%90%86%E6%9C%AC%E9%83%A8%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">info@metoriarch.com</a></p>
+        <div class="cta"><div class="cta-wrap"><span class="tag">社内検討用・15ページ</span><a class="btn btn--gold" href="#download">資料を受け取る<span class="ar" aria-hidden="true"></span></a></div><div class="cta-wrap"><a class="btn btn--ghost" href="#contact-form">30分の相談を申し込む</a></div></div>
       </div>
       <div><figure class="sheet sheet--hero"><img src="./lp/illust4/hero.webp" alt="ばらばらの書類が、丁寧な手で一つにまとめられていく様子" width="1200" height="800" loading="lazy"></figure></div>
     </div>
@@ -622,7 +631,7 @@ html{ scroll-padding-top:68px; }
     </figure>
     <p class="point rv"><span class="mk"><span class="w">今の業務を止めずに、</span><span class="w">約1か月で引き取ります。</span></span></p>
     <div class="ctaband rv"><div><p class="t"><span class="w">社内でご検討いただくための、</span><span class="w">資料をご用意しています。</span></p><p class="s">サービスの考え方・事例・担当範囲・始め方を、15ページにまとめました。</p></div>
-      <div class="btns"><div class="cta-wrap"><span class="tag">社内検討用・15ページ</span><a class="btn btn--gold" href="#download">資料を受け取る<span class="ar" aria-hidden="true"></span></a></div><div class="cta-wrap"><a class="btn btn--ghost" href="mailto:info@metoriarch.com?subject=%E5%A4%96%E9%83%A8%E3%81%AE%E7%AE%A1%E7%90%86%E6%9C%AC%E9%83%A8%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">メールで30分の相談を申し込む</a></div></div></div>
+      <div class="btns"><div class="cta-wrap"><span class="tag">社内検討用・15ページ</span><a class="btn btn--gold" href="#download">資料を受け取る<span class="ar" aria-hidden="true"></span></a></div><div class="cta-wrap"><a class="btn btn--ghost" href="#contact-form">30分の相談を申し込む</a></div></div></div>
   </div>
 </section>
 
@@ -649,7 +658,7 @@ html{ scroll-padding-top:68px; }
     </div>
     <p class="point rv"><span class="mk"><span class="w">年1回の決算でしか数字が見えなかった会社が、</span><span class="w">毎月15日に月次が出る会社になりました。</span></span></p>
     <div class="ctaband rv"><div><p class="t"><span class="w">社内でご検討いただくための、</span><span class="w">資料をご用意しています。</span></p><p class="s">サービスの考え方・事例・担当範囲・始め方を、15ページにまとめました。</p></div>
-      <div class="btns"><div class="cta-wrap"><span class="tag">社内検討用・15ページ</span><a class="btn btn--gold" href="#download">資料を受け取る<span class="ar" aria-hidden="true"></span></a></div><div class="cta-wrap"><a class="btn btn--ghost" href="mailto:info@metoriarch.com?subject=%E5%A4%96%E9%83%A8%E3%81%AE%E7%AE%A1%E7%90%86%E6%9C%AC%E9%83%A8%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">メールで30分の相談を申し込む</a></div></div></div>
+      <div class="btns"><div class="cta-wrap"><span class="tag">社内検討用・15ページ</span><a class="btn btn--gold" href="#download">資料を受け取る<span class="ar" aria-hidden="true"></span></a></div><div class="cta-wrap"><a class="btn btn--ghost" href="#contact-form">30分の相談を申し込む</a></div></div></div>
   </div>
 </section>
 
@@ -753,6 +762,7 @@ html{ scroll-padding-top:68px; }
         <p style="margin-top:20px;font-weight:700;color:var(--navy)">資料でわかること（全15ページ）</p><ul class="ck"><li>サービスの考え方と、担当する範囲</li><li>事例（ゼロから1か月で月次を締めるまで）</li><li>顧問の先生との役割分担</li><li>3つの始め方</li></ul></div>
       <div>
       <form class="dl-form" id="dl-form" action="https://script.google.com/macros/s/AKfycbw4t1Yq0NrW28kTiax5dH3ZvR4ZX_KEtJ5f--xJbMMzGWX3WB9ynCEgZ25G5EjuAwvk/exec" method="post" novalidate>
+        <input type="hidden" name="kind" value="資料請求">
         <label><span class="lb">会社名<em>必須</em></span><input name="company" required autocomplete="organization"></label>
         <label><span class="lb">部署・役職</span><input name="dept" autocomplete="organization-title"></label>
         <label><span class="lb">お名前<em>必須</em></span><input name="name" required autocomplete="name"></label>
@@ -773,7 +783,7 @@ html{ scroll-padding-top:68px; }
       <div class="dl-done" id="dl-done" hidden>
         <p class="t">ありがとうございます。</p>
         <p>資料のご請求を受け付けました。内容を確認のうえ、ご入力いただいたメールアドレスへ、担当より資料をお送りします。</p>
-        <p class="note">しばらくたっても届かない場合は、info@metoriarch.com までご連絡ください。</p>
+        <p class="note">しばらくたっても届かない場合は、お手数ですが下のお問い合わせフォームからご連絡ください。</p>
       </div>
       </div>
     </div>
@@ -785,19 +795,56 @@ html{ scroll-padding-top:68px; }
     <div class="sh rv"><p class="en">Contact</p><h2><span class="w">まずは30分、</span><span class="w">いまお困りの管理を</span><span class="w">一緒に整理させてください。</span></h2></div>
     <figure class="sheet sheet--navy contact-il rv"><img src="./lp/illust4/contact.webp" alt="オンラインで相談を受ける机" width="1200" height="800" loading="lazy"></figure>
     <div class="flow3 rv">
-      <div class="card"><p class="n">01</p><h3>メールで、ひと言</h3><p>お心当たりの会社があれば、社名と困りごとをひと言で。詳しい資料は要りません。</p></div>
+      <div class="card"><p class="n">01</p><h3>フォームで、ひと言</h3><p>下のフォームに、社名と困りごとをひと言で。詳しい資料は要りません。</p></div>
       <div class="card"><p class="n">02</p><h3>30分、現状を伺う</h3><p>管理の現状を、オンラインで30分伺います。ご紹介者の同席も歓迎します。</p></div>
       <div class="card"><p class="n">03</p><h3>見立てをお伝えする</h3><p>何から整えるかの見立てをお伝えし、ご希望なら今の業務を止めずに約1か月で引き取ります。</p></div>
     </div>
-    <div class="go rv"><div class="cta-wrap"><a class="btn btn--gold" href="mailto:info@metoriarch.com?subject=%E5%A4%96%E9%83%A8%E3%81%AE%E7%AE%A1%E7%90%86%E6%9C%AC%E9%83%A8%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">メールで30分の相談を申し込む</a></div><div class="cta-wrap"><a class="btn btn--ghost" href="#download">資料を受け取る</a></div></div>
-    <p class="mailline">info@metoriarch.com</p>
+    <div class="card dl cform rv" id="contact-form">
+      <div class="cf-side">
+        <p class="cf-t">お問い合わせフォーム</p>
+        <p class="cf-d">30分のご相談のお申し込み、サービスについてのご質問は、こちらからお送りください。内容を確認のうえ、担当よりメールでご連絡します。</p>
+        <ul class="ck"><li>オンラインで30分、現状を伺います</li><li>ご紹介者の同席も歓迎します</li><li>資料だけ欲しい方は、上の資料請求からどうぞ</li></ul>
+      </div>
+      <div>
+      <form class="dl-form" id="cf-form" action="https://script.google.com/macros/s/AKfycbw4t1Yq0NrW28kTiax5dH3ZvR4ZX_KEtJ5f--xJbMMzGWX3WB9ynCEgZ25G5EjuAwvk/exec" method="post" novalidate>
+        <input type="hidden" name="kind" value="お問い合わせ">
+        <label><span class="lb">ご用件<em>必須</em></span><select name="topic" required>
+          <option value="">選んでください</option>
+          <option>30分の相談を申し込みたい</option>
+          <option>サービスについて質問したい</option>
+          <option>その他</option>
+        </select></label>
+        <label><span class="lb">会社名<em>必須</em></span><input name="company" required autocomplete="organization"></label>
+        <label><span class="lb">部署・役職</span><input name="dept" autocomplete="organization-title"></label>
+        <label><span class="lb">お名前<em>必須</em></span><input name="name" required autocomplete="name"></label>
+        <label><span class="lb">メールアドレス<em>必須</em></span><input name="email" type="email" required autocomplete="email"></label>
+        <label><span class="lb">電話番号</span><input name="tel" type="tel" autocomplete="tel"></label>
+        <label><span class="lb">いまのご状況</span><select name="status">
+          <option value="">選んでください</option>
+          <option>グループに入る・入った会社の管理を整えたい</option>
+          <option>担当者の交代・事業承継で引き継ぎ先を探している</option>
+          <option>上場や成長に向けて管理を整えたい</option>
+          <option>委託しているが、社内の手が空かない</option>
+          <option>情報収集中</option>
+        </select></label>
+        <label><span class="lb">ご相談の内容<em>必須</em></span><textarea name="message" rows="5" required placeholder="例：グループに入った子会社の経理・給与を、来月から引き取ってほしい"></textarea></label>
+        <label class="agree"><input type="checkbox" name="agree" value="yes" required><span><a href="./privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意のうえ送信します</span></label>
+        <p class="err" role="alert"></p>
+        <button class="btn btn--navy" type="submit">送信する<span class="ar" aria-hidden="true"></span></button>
+      </form>
+      <div class="dl-done" hidden>
+        <p class="t">ありがとうございます。</p>
+        <p>お問い合わせを受け付けました。内容を確認のうえ、ご入力いただいたメールアドレスへ、担当よりご連絡します。</p>
+      </div>
+      </div>
+    </div>
     <dl class="corp rv">
       <dt>会社名</dt><dd>株式会社Metoriarch（メトリアーチ）</dd>
       <dt>代表取締役</dt><dd>加藤 絵未</dd>
       <dt>所在地</dt><dd>愛知県名古屋市中区金山2丁目4-22 <span class="w">ワールドフラッグ金山5階</span></dd>
       <dt>設立</dt><dd>2023年1月</dd>
       <dt>対応エリア</dt><dd>全国（リモートで対応）</dd>
-      <dt>お問い合わせ</dt><dd>info@metoriarch.com</dd>
+      <dt>お問い合わせ</dt><dd><a href="#contact-form">お問い合わせフォーム</a>から</dd>
     </dl>
   </div>
 </section>
@@ -806,21 +853,24 @@ html{ scroll-padding-top:68px; }
 
 <script>
 (function(){
-  var f=document.getElementById('dl-form'); if(!f) return;
-  var done=document.getElementById('dl-done'), err=document.getElementById('dl-err');
-  f.addEventListener('submit',function(ev){
-    ev.preventDefault(); err.textContent='';
-    var need=[['company','会社名'],['name','お名前'],['email','メールアドレス']];
-    for(var i=0;i<need.length;i++){ if(!f[need[i][0]].value.trim()){ err.textContent=need[i][1]+'を入力してください。'; f[need[i][0]].focus(); return; } }
-    if(!/^[^@ ]+@[^@ ]+[.][^@ ]+$/.test(f.email.value.trim())){ err.textContent='メールアドレスの形をご確認ください。'; f.email.focus(); return; }
-    if(!f.agree.checked){ err.textContent='プライバシーポリシーへの同意をお願いします。'; return; }
-    var btn=f.querySelector('button'); btn.disabled=true;
-    var show=function(){ f.hidden=true; done.hidden=false; done.scrollIntoView({block:'center'}); };
-    var url=f.getAttribute('action');
-    if(!url || url.indexOf('http')!==0){ show(); return; }
-    var body=new URLSearchParams(new FormData(f)); body.append('page','lp-bpo');
-    fetch(url,{method:'POST',mode:'no-cors',body:body}).then(show).catch(function(){ btn.disabled=false; err.textContent='送信できませんでした。時間をおいて、もう一度お試しください。'; });
-  });
+  function setup(id){
+    var f=document.getElementById(id); if(!f) return;
+    var done=f.parentNode.querySelector('.dl-done'), err=f.querySelector('.err');
+    f.addEventListener('submit',function(ev){
+      ev.preventDefault(); err.textContent='';
+      var need=[['topic','ご用件'],['company','会社名'],['name','お名前'],['email','メールアドレス'],['message','ご相談の内容']];
+      for(var i=0;i<need.length;i++){ var el=f.elements[need[i][0]]; if(el && !el.value.trim()){ err.textContent=need[i][1]+(el.tagName==='SELECT'?'を選んでください。':'を入力してください。'); el.focus(); return; } }
+      if(!/^[^@ ]+@[^@ ]+[.][^@ ]+$/.test(f.email.value.trim())){ err.textContent='メールアドレスの形をご確認ください。'; f.email.focus(); return; }
+      if(!f.agree.checked){ err.textContent='プライバシーポリシーへの同意をお願いします。'; return; }
+      var btn=f.querySelector('button'); btn.disabled=true;
+      var show=function(){ f.hidden=true; done.hidden=false; done.scrollIntoView({block:'center'}); };
+      var url=f.getAttribute('action');
+      if(!url || url.indexOf('http')!==0){ show(); return; }
+      var body=new URLSearchParams(new FormData(f)); body.append('page','lp-bpo');
+      fetch(url,{method:'POST',mode:'no-cors',body:body}).then(show).catch(function(){ btn.disabled=false; err.textContent='送信できませんでした。時間をおいて、もう一度お試しください。'; });
+    });
+  }
+  setup('dl-form'); setup('cf-form');
 })();
 </script>
 <script>
