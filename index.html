@@ -308,7 +308,10 @@ ul.ck.g li::before{ background-image:url("data:image/svg+xml,%3Csvg xmlns='http:
 .msg-tx > p{ margin-top:16px; font-size:16.5px; line-height:2; }
 .msg-sig{ margin-top:24px; padding-top:18px; border-top:1px solid #d6d6e0; }
 .msg-sig .nm{ font-family:var(--serif); font-weight:700; font-size:18px; color:var(--navy); }
-.msg-sig ul.ck{ margin-top:8px; }
+.msg-sig .tt{ margin-top:4px; font-size:13.5px; line-height:1.8; color:var(--ink-soft, #5a5d6e); }
+.msg-sig ul.cv{ margin-top:14px; padding:0; list-style:none; border-left:2px solid var(--gold-l); }
+.msg-sig ul.cv li{ position:relative; padding:3px 0 3px 18px; font-size:14.5px; line-height:1.75; }
+.msg-sig ul.cv li::before{ content:""; position:absolute; left:-5px; top:12px; width:8px; height:8px; border-radius:50%; background:var(--gold); }
 .msg-sig ul.ck li{ font-size:14px; }
 @media (max-width:760px){ .msg{ grid-template-columns:1fr; } .msg-ph{ max-width:300px; } }
 .team-more a{ color:var(--navy); font-weight:700; }
@@ -542,10 +545,10 @@ html{ scroll-padding-top:68px; }
 <body>
 <div class="gnav" id="gnav" role="banner">
   <a class="gnav-logo" href="./index.html" aria-label="株式会社Metoriarch トップへ"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAsCAYAAAAq/ZsdAAADdUlEQVR42tWZPagcVRiGn7N3xUSDSmKjaNIo4k8jIsEq+E9UEEXj1RRaRBsLSUAb0wQhWmilooU/YBTCLRRBBJEg6kVtLBJIEeEiFkqCohBQo3fvPBaeA5/D3bg/M/tzmh3m7Mz5nj3nfec9s6ivqQsA5XOeWqg9qa/gv+1j9aLc0Z1DmAvUD1VR/8pQx9Wr5gWq1KheoR7NDD3UnrqaT/ys3jrrUAFmh3oy175aZqhX6MLnnjKlapohkBSW2aPq37Xa/wOkuqZW+fhguFFnBmA65cdVD+Qaq1yz/YDKl8q5w+rGaTtgmJVz1UNhVqpa7esCGdek+rV62bR0FfRyifplrTaHAYoX/qDeOGmoAHO9uvJ/MIMARcH9rj4wCbPI4i8w96qnB4EZFMia8J4Jg3ZaEn8nH+/tU8PYQHVHeT0MutBSjHl5HedtFKhAlWn/RN3clK7CErtQ/SgssWqI+oYGqpvFcfXqcaECzJXqsUH10iRQHPAX9fZRoQLMzeqpcWDGBarHpceHccBajHlsvRgzDaC6aF8YJC7FPvW5fjFmWkD1uLSkntfPAcOsbFDfO1uMmSZQXVffqJevMxtFL5eqy+PqZRJA/eJSJ8DcoH7fBoxZmD2g6SS9CpwDVMB1wImUUqXeB7wDbALWWhiXNvY5axlmDdgLrGSYfcD7GaZqA6as6zY09Jt6Txjj1VFizCitya1AD+gC3wG7UkpH1S3AIWBn7l8AWt3SdxuG+Qx4JKV0MkeipayhXoNjtaohs1a6wNvAzgxzG/D5pGHG1VB8qu8P99sTtNRzwm1UoHLNn+ruAHOwyRgzKVMoS+hHYDGltKyeD7wBLOYl2GnpkdC4KRSYb4GHUkor6lbgMHDTxPUyhikYiv0AuCXDbAe+mBWYQYGqDNQFXkop3Z9SOp3fAB0BtgWnm4n3xb0BxF+pT4Zrnh72bcwsuFyx3l/Vu0v8z3+QTSTGNOlyRQ8ncow5pl4MvAvcOakY05TLFZgjwO6U0in1mhxjrp0V8Q9iCjHGvAXclWHuyDFm5mGiKURhPxv6nphmjBnVFM7k4z/UhwPM89OOMaNuwQV+Ah5MKX2lbgLeBHaFGJOYk9YBloEdGWYb8GmGmVknO1tL6oaU0pkcY5aArXMh/n5AWS+L2dk25qjTYU5bUp8CXgy2vZCP57L9AwOsY7KSvg52AAAAAElFTkSuQmCC" alt="" width="26" height="22"></a>
-  <nav class="gnav-list" aria-label="サイト内メニュー"><a href="#service">サービス</a><a href="#strength">強み</a><a href="#case">事例</a><a href="#start">始め方</a><a href="#faq">よくある質問</a><a href="#team">チーム</a><a href="#message">代表</a><a href="#download">資料請求</a><a href="#contact">ご相談</a></nav>
+  <nav class="gnav-list" aria-label="サイト内メニュー"><a href="#service">サービス</a><a href="#strength">強み</a><a href="#case">事例</a><a href="#start">始め方</a><a href="#faq">よくある質問</a><a href="#team">チーム</a><a href="#message">代表</a><a href="#contact">ご相談</a></nav>
   <button class="gnav-btn" type="button" aria-expanded="false" aria-controls="gnav-drawer" aria-label="メニューを開く"><span></span><span></span><span></span></button>
 </div>
-<div class="gnav-drawer" id="gnav-drawer"><nav aria-label="サイト内メニュー"><a href="#service">サービス</a><a href="#strength">強み</a><a href="#case">事例</a><a href="#start">始め方</a><a href="#faq">よくある質問</a><a href="#team">チーム</a><a href="#message">代表</a><a href="#download">資料請求</a><a href="#contact">ご相談</a></nav></div>
+<div class="gnav-drawer" id="gnav-drawer"><nav aria-label="サイト内メニュー"><a href="#service">サービス</a><a href="#strength">強み</a><a href="#case">事例</a><a href="#start">始め方</a><a href="#faq">よくある質問</a><a href="#team">チーム</a><a href="#message">代表</a><a href="#contact">ご相談</a></nav></div>
 
 <section class="hero" id="top">
   <div class="plane p1" aria-hidden="true"></div><div class="plane p3" aria-hidden="true"></div>
@@ -556,7 +559,7 @@ html{ scroll-padding-top:68px; }
         <h1 class="for"><span class="mk"><span class="w">会社の管理を、</span></span><br><span class="mk"><span class="w">今の業務を止めずに</span><span class="w">約1か月で引き取ります。</span></span></h1>
         <p class="lead"><span class="w">経理・労務・人事を</span><span class="w">丸ごとお任せいただき、</span><span class="w">回しながら改善まで進める、</span><span class="w">新しい業務代行です。</span></p>
         <p class="also"><span class="w">M&amp;Aで迎えた会社・これから迎える会社のほか、</span><span class="w">経理・労務・人事をまとめて外に任せたい</span><span class="w">中小企業の社長様にも、幅広く対応しています。</span></p>
-        <div class="cta"><div class="cta-wrap"><span class="tag">社内検討用・15ページ</span><a class="btn btn--gold" href="#download">資料を受け取る<span class="ar" aria-hidden="true"></span></a></div><div class="cta-wrap"><a class="btn btn--ghost" href="#contact-form">30分の相談を申し込む</a></div></div>
+        <div class="cta"><div class="cta-wrap"><a class="btn btn--gold" href="#contact-form">30分の相談を申し込む</a></div></div>
       </div>
       <div><figure class="sheet sheet--hero"><img src="./lp/illust4/hero.webp" alt="ばらばらの書類が、丁寧な手で一つにまとめられていく様子" width="1200" height="800" loading="lazy"></figure></div>
     </div>
@@ -646,8 +649,8 @@ html{ scroll-padding-top:68px; }
       </svg>
     </figure>
     <p class="point rv"><span class="mk"><span class="w">今の業務を止めずに、</span><span class="w">約1か月で引き取ります。</span></span></p>
-    <div class="ctaband rv"><div><p class="t"><span class="w">社内でご検討いただくための、</span><span class="w">資料をご用意しています。</span></p><p class="s">サービスの考え方・事例・担当範囲・始め方を、15ページにまとめました。</p></div>
-      <div class="btns"><div class="cta-wrap"><span class="tag">社内検討用・15ページ</span><a class="btn btn--gold" href="#download">資料を受け取る<span class="ar" aria-hidden="true"></span></a></div><div class="cta-wrap"><a class="btn btn--ghost" href="#contact-form">30分の相談を申し込む</a></div></div></div>
+    <div class="ctaband rv"><div><p class="t"><span class="w">まずは30分、</span><span class="w">いまの管理の状況をお聞かせください。</span></p><p class="s">オンラインで現状を伺い、何から整えるかの見立てをお伝えします。</p></div>
+      <div class="btns"><div class="cta-wrap"><a class="btn btn--gold" href="#contact-form">30分の相談を申し込む</a></div></div></div>
   </div>
 </section>
 
@@ -673,8 +676,8 @@ html{ scroll-padding-top:68px; }
       <blockquote class="card">通常なら立ち上げに3か月かかるところを、1か月で終わらせてくれる。<cite>同上</cite></blockquote>
     </div>
     <p class="point rv"><span class="mk"><span class="w">年1回の決算でしか数字が見えなかった会社が、</span><span class="w">毎月15日に月次が出る会社になりました。</span></span></p>
-    <div class="ctaband rv"><div><p class="t"><span class="w">社内でご検討いただくための、</span><span class="w">資料をご用意しています。</span></p><p class="s">サービスの考え方・事例・担当範囲・始め方を、15ページにまとめました。</p></div>
-      <div class="btns"><div class="cta-wrap"><span class="tag">社内検討用・15ページ</span><a class="btn btn--gold" href="#download">資料を受け取る<span class="ar" aria-hidden="true"></span></a></div><div class="cta-wrap"><a class="btn btn--ghost" href="#contact-form">30分の相談を申し込む</a></div></div></div>
+    <div class="ctaband rv"><div><p class="t"><span class="w">まずは30分、</span><span class="w">いまの管理の状況をお聞かせください。</span></p><p class="s">オンラインで現状を伺い、何から整えるかの見立てをお伝えします。</p></div>
+      <div class="btns"><div class="cta-wrap"><a class="btn btn--gold" href="#contact-form">30分の相談を申し込む</a></div></div></div>
   </div>
 </section>
 
@@ -775,49 +778,24 @@ html{ scroll-padding-top:68px; }
       <figure class="msg-ph"><img src="./members/kato.jpg" alt="代表取締役 加藤 絵未" width="640" height="640" loading="lazy"></figure>
       <div class="msg-tx">
         <p class="eyebrow">Message</p>
-        <h2><span class="w">子育て期が、</span><span class="w">最も市場価値の高まる</span><span class="w">時代へ。</span></h2>
+        <h2><span class="w">関わる方の自己実現を、</span><span class="w">支援する。</span></h2>
+        <p><span class="w">根本にあるのは、</span><span class="w">関わる方の自己実現を</span><span class="w">支援したいという思いです。</span></p>
         <p><span class="w">管理の仕事を担うのは、</span><span class="w">大きな会社で経理・人事労務・プロジェクト管理を経験してきた、</span><span class="w">在宅で働く女性のメンバーです。</span></p>
-        <p><span class="w">子どもを持つことが、</span><span class="w">キャリアを諦める理由にならない。</span><span class="w">時間や場所に制約がある時期でも、</span><span class="w">上流の仕事で力を発揮できる場をつくっています。</span></p>
+        <p><span class="w">出産や育児のさなかでも</span><span class="w">キャリアを重ねられる、</span><span class="w">そんな日本の未来をつくります。</span></p>
         <div class="msg-sig">
           <p class="nm">代表取締役　加藤 絵未</p>
-          <ul class="ck"><li>株式会社Lumia 代表取締役（女性のためのAIスクール・秘書マッチング・AI企業研修）</li><li>POP UP協会 会長（ブランドの立ち上げから成長までの支援）</li></ul>
+          <p class="tt">株式会社Metoriarch 代表取締役／株式会社Lumia 代表取締役／POP UP協会 会長</p>
+          <ul class="cv">
+            <li>関西大学を卒業</li>
+            <li>株式会社ミルボンで法人営業を経験</li>
+            <li>結婚を機に退職。再就職はかなわず、専業主婦に</li>
+            <li>パートの美容部員として売り場に立ち、ブランド全国店舗で客単価1位に</li>
+            <li>2023年、売り場に立ちながら会社を設立</li>
+            <li>2026年、社名をMetoriarchに変更</li>
+            <li>現在、提携先と7つの事業を立ち上げ中</li>
+            <li>一児の母</li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec sec--blue" id="download">
-  <div class="wrap">
-    <div class="sh rv"><p class="en">Download</p><h2><span class="w">社内でご検討いただくための</span><span class="w">資料をお送りします。</span></h2><p class="lead">ご入力いただいたメールアドレスへ、担当よりお送りします。</p></div>
-    <div class="card dl rv">
-      <div class="dl-cover"><img src="./lp/doc-cover.webp" alt="資料の表紙" width="800" height="450" loading="lazy">
-        <p style="margin-top:20px;font-weight:700;color:var(--navy)">資料でわかること（全15ページ）</p><ul class="ck"><li>サービスの考え方と、担当する範囲</li><li>事例（ゼロから1か月で月次を締めるまで）</li><li>顧問の先生との役割分担</li><li>3つの始め方</li></ul></div>
-      <div>
-      <form class="dl-form" id="dl-form" action="https://script.google.com/macros/s/AKfycbw4t1Yq0NrW28kTiax5dH3ZvR4ZX_KEtJ5f--xJbMMzGWX3WB9ynCEgZ25G5EjuAwvk/exec" method="post" novalidate>
-        <input type="hidden" name="kind" value="資料請求">
-        <label><span class="lb">会社名<em>必須</em></span><input name="company" required autocomplete="organization"></label>
-        <label><span class="lb">部署・役職</span><input name="dept" autocomplete="organization-title"></label>
-        <label><span class="lb">お名前<em>必須</em></span><input name="name" required autocomplete="name"></label>
-        <label><span class="lb">メールアドレス<em>必須</em></span><input name="email" type="email" required autocomplete="email"></label>
-        <label><span class="lb">電話番号</span><input name="tel" type="tel" autocomplete="tel"></label>
-        <label><span class="lb">いまのご状況</span><select name="status">
-          <option value="">選んでください</option>
-          <option>グループに入る・入った会社の管理を整えたい</option>
-          <option>担当者の交代・事業承継で引き継ぎ先を探している</option>
-          <option>上場や成長に向けて管理を整えたい</option>
-          <option>委託しているが、社内の手が空かない</option>
-          <option>情報収集中</option>
-        </select></label>
-        <label class="agree"><input type="checkbox" name="agree" value="yes" required><span><a href="./privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意のうえ送信します</span></label>
-        <p class="err" id="dl-err" role="alert"></p>
-        <button class="btn btn--navy" type="submit">資料を請求する<span class="ar" aria-hidden="true"></span></button>
-      </form>
-      <div class="dl-done" id="dl-done" hidden>
-        <p class="t">ありがとうございます。</p>
-        <p>資料のご請求を受け付けました。内容を確認のうえ、ご入力いただいたメールアドレスへ、担当より資料をお送りします。</p>
-        <p class="note">しばらくたっても届かない場合は、お手数ですが下のお問い合わせフォームからご連絡ください。</p>
-      </div>
       </div>
     </div>
   </div>
@@ -836,7 +814,7 @@ html{ scroll-padding-top:68px; }
       <div class="cf-side">
         <p class="cf-t">お問い合わせフォーム</p>
         <p class="cf-d">30分のご相談のお申し込み、サービスについてのご質問は、こちらからお送りください。内容を確認のうえ、担当よりメールでご連絡します。</p>
-        <ul class="ck"><li>オンラインで30分、現状を伺います</li><li>ご紹介者の同席も歓迎します</li><li>資料だけ欲しい方は、上の資料請求からどうぞ</li></ul>
+        <ul class="ck"><li>オンラインで30分、現状を伺います</li><li>ご紹介者の同席も歓迎します</li><li>サービスについてのご質問だけでも、お送りください</li></ul>
       </div>
       <div>
       <form class="dl-form" id="cf-form" action="https://script.google.com/macros/s/AKfycbw4t1Yq0NrW28kTiax5dH3ZvR4ZX_KEtJ5f--xJbMMzGWX3WB9ynCEgZ25G5EjuAwvk/exec" method="post" novalidate>
@@ -903,7 +881,7 @@ html{ scroll-padding-top:68px; }
       fetch(url,{method:'POST',mode:'no-cors',body:body}).then(show).catch(function(){ btn.disabled=false; err.textContent='送信できませんでした。時間をおいて、もう一度お試しください。'; });
     });
   }
-  setup('dl-form'); setup('cf-form');
+  setup('cf-form');
 })();
 </script>
 <script>
